@@ -1,0 +1,117 @@
+[
+  {
+    "header": "Starting Kendo",
+    "questions": [
+      {
+        "key": "0",
+        "question": "Can I join kendo if I am ___?",
+        "answer": "Anyone regardless of age, gender, or physical ability may start kendo."
+      },
+      {
+        "key": "1",
+        "question": "Do I need any previous experience?",
+        "answer": "No previous experience in sports or any other martial arts is required for kendo, and is often preferred."
+      },
+      {
+        "key": "2",
+        "question": "When can my child start kendo?",
+        "answer": "Children may start as young as 7, but this depends on the maturity of the child."
+      },
+      {
+        "key": "3",
+        "question": "What should I wear to practice?",
+        "answer": "Comfortable clothing such as t-shirts and sweatpants. Clothing like sleeveless shirts, crop tops, and short shorts, are not allowed."
+      },
+      {
+        "key": "4",
+        "question": "What can I practice at home?",
+        "answer": "You may practice the footwork that you learn in the class as it does not require a lot of space. If you have space, you may also practice doing basic swings."
+      },
+      {
+        "key": "5",
+        "question": "Where can I get extra practice?",
+        "answer": "You may always practice at home by yourself. Until you reach armor and are a member of the local federation, you cannot practice at other dojos. If you are currently a student at our club, you may be able to join practice at the other dojo we teach at."
+      }
+    ]
+  },
+  {
+    "header": "Experienced Kenshi",
+    "questions": [
+      {
+        "key": "0",
+        "question": "Can I join practice if I have previous kendo experience?",
+        "answer": "Yes! Please contact us so we can assess your skill level before you join our practices."
+      },
+      {
+        "key": "1",
+        "question": "Can I join practice if I am not from the local area?",
+        "answer": "Yes, please contact us before joining practice."
+      },
+      {
+        "key": "2",
+        "question": "What other events can I participate in?",
+        "answer": "If you have valid federation membership, you may also participate in rank tests, seminars, and tournaments. You may also be able to sometimes attend these events even if they are not in the local area."
+      }
+    ]
+  },
+  {
+    "header": "Cost",
+    "questions": [
+      {
+        "key": "0",
+        "question": "How much do classes cost?",
+        "answer": "We go by a quarter system, where classes are priced by the parks program. A quarter typically costs $80-$90."
+      },
+      {
+        "key": "1",
+        "question": "How much does equipment cost?",
+        "answer": "At first, the only equipment to be purchased is a shinai (bamboo sword). These cost $25 and are provided by the club. Additional equipment, such as armor, may be purchased or rented from us later."
+      }
+    ]
+  },
+  {
+    "header": "Shinai",
+    "questions": [
+      {
+        "key": "0",
+        "question": "What is the shinai made of?",
+        "answer": "It is four bamboo slats put together."
+      }
+    ]
+  },
+  {
+    "header": "Armor",
+    "questions": [
+      {
+        "key": "0",
+        "question": "When do I receive armor?",
+        "answer": "If you are progressing well in the beginning and intermediate classes, you may be able to receive armor towards the end of the intermediate class."
+      }
+    ]
+  },
+  {
+    "header": "Rank and Testing",
+    "questions": [
+      {
+        "key": "0",
+        "question": "When can I receive rank?",
+        "answer": "Depending on your progress, you may be able to test for your first rank between 9 months - 1 year after starting."
+      },
+      {
+        "key": "1",
+        "question": "How does the ranking system work?",
+        "answer": "Ranks are divided into two categories, white belt and black belt. White belt has six degrees which go from 6 kyu - 1 kyu, with 1 kyu being the highest. Black belt has eight degrees and are vice versa from white belt, which go from 1 dan - 8 dan."
+      }
+    ]
+  },
+  {
+    "header": "Tournament",
+    "questions": [
+      {
+        "key": "0",
+        "question": "When can we participate in tournaments?",
+        "answer": "Depending on your progress, you may be able to attend your first tournament between 9 months - 1 year after starting."
+      }
+    ]
+  }
+]

@@ -1,0 +1,423 @@
+[
+  {
+    "key": "0",
+    "section": "Armor and equipment",
+    "terms": [
+      {
+        "romaji": "keiko-gi",
+        "kanji": "稽古着",
+        "translation": "practice top"
+      },
+      {
+        "romaji": "hakama",
+        "kanji": "袴",
+        "translation": "practice trousers"
+      },
+      {
+        "romaji": "bougu",
+        "kanji": "防具",
+        "translation": "armor"
+      },
+      {
+        "romaji": "men",
+        "kanji": "面",
+        "translation": "head armor"
+      },
+      {
+        "romaji": "kote",
+        "kanji": "小手",
+        "translation": "arm armor"
+      },
+      {
+        "romaji": "dou",
+        "kanji": "胴",
+        "translation": "torso armor"
+      },
+      {
+        "romaji": "tare",
+        "kanji": "垂",
+        "translation": "hip armor"
+      },
+      {
+        "romaji": "shinai",
+        "kanji": "竹刀",
+        "translation": "bamboo sword"
+      },
+      {
+        "romaji": "bokken / boku-tou",
+        "kanji": "木刀",
+        "translation": "wooden sword"
+      }
+    ]
+  },
+  {
+    "key": "1",
+    "section": "Commands",
+    "terms": [
+      {
+        "romaji": "rei",
+        "kanji": "礼",
+        "translation": "show courtesy (bow)"
+      },
+      {
+        "romaji": "seiretsu",
+        "kanji": "整列",
+        "translation": "form line"
+      },
+      {
+        "romaji": "seiza",
+        "kanji": "正座",
+        "translation": "sitting position"
+      },
+      {
+        "romaji": "mokusou",
+        "kanji": "黙想",
+        "translation": "meditation"
+      },
+      {
+        "romaji": "shou-men ni",
+        "kanji": "正面に",
+        "translation": "bow to the front"
+      },
+      {
+        "romaji": "sensei ni",
+        "kanji": "先生に",
+        "translation": "bow to the sensei"
+      },
+      {
+        "romaji": "sougo ni",
+        "kanji": "相互に",
+        "translation": "bow mutually"
+      },
+      {
+        "romaji": "hajime",
+        "kanji": "始め",
+        "translation": "start"
+      },
+      {
+        "romaji": "yame",
+        "kanji": "止め",
+        "translation": "stop"
+      },
+      {
+        "romaji": "kamae",
+        "kanji": "構え",
+        "translation": "readied stance"
+      },
+      {
+        "romaji": "tai-tou",
+        "kanji": "帯刀",
+        "translation": "ready sword on hip"
+      },
+      {
+        "romaji": "nuke-tou",
+        "kanji": "抜け刀",
+        "translation": "draw sword from hip"
+      },
+      {
+        "romaji": "son-kyo",
+        "kanji": "蹲踞",
+        "translation": "squat position"
+      },
+      {
+        "romaji": "osame-tou",
+        "kanji": "納め刀",
+        "translation": "return sword to hip"
+      }
+    ]
+  },
+  {
+    "key": "2",
+    "section": "Counting",
+    "terms": [
+      {
+        "romaji": "ichi",
+        "kanji": "一",
+        "translation": "one"
+      },
+      {
+        "romaji": "ni",
+        "kanji": "二",
+        "translation": "two"
+      },
+      {
+        "romaji": "san",
+        "kanji": "三",
+        "translation": "three"
+      },
+      {
+        "romaji": "shi (yon)",
+        "kanji": "四",
+        "translation": "four"
+      },
+      {
+        "romaji": "go",
+        "kanji": "五",
+        "translation": "five"
+      },
+      {
+        "romaji": "roku",
+        "kanji": "六",
+        "translation": "six"
+      },
+      {
+        "romaji": "shichi (nana)",
+        "kanji": "七",
+        "translation": "seven"
+      },
+      {
+        "romaji": "hachi",
+        "kanji": "八",
+        "translation": "eight"
+      },
+      {
+        "romaji": "ku (kyuu)",
+        "kanji": "九",
+        "translation": "nine"
+      },
+      {
+        "romaji": "jyuu",
+        "kanji": "十",
+        "translation": "ten"
+      },
+      {
+        "romaji": "ni-jyuu",
+        "kanji": "二十",
+        "translation": "twenty"
+      },
+      {
+        "romaji": "san-jyuu",
+        "kanji": "三十",
+        "translation": "thirty"
+      },
+      {
+        "romaji": "hyaku",
+        "kanji": "百",
+        "translation": "one hundred"
+      }
+    ]
+  },
+  {
+    "key": "3",
+    "section": "Footwork",
+    "terms": [
+      {
+        "romaji": "ashi",
+        "kanji": "足",
+        "translation": "foot / feet"
+      },
+      {
+        "romaji": "ashi-sabaki",
+        "kanji": "足さばき",
+        "translation": "footwork"
+      },
+      {
+        "romaji": "suri-ashi",
+        "kanji": "摺り足",
+        "translation": "sliding feet"
+      },
+      {
+        "romaji": "okuri-ashi",
+        "kanji": "送り足",
+        "translation": "single step footwork"
+      },
+      {
+        "romaji": "renzoku okuri-ashi",
+        "kanji": "連続送り足",
+        "translation": "continuous single step footwork"
+      },
+      {
+        "romaji": "ayumi-ashi",
+        "kanji": "歩み足",
+        "translation": "crossing footwork"
+      },
+      {
+        "romaji": "fumikomi",
+        "kanji": "踏み込み",
+        "translation": "attack step"
+      }
+    ]
+  },
+  {
+    "key": "4",
+    "section": "Strikes",
+    "terms": [
+      {
+        "romaji": "men",
+        "kanji": "面",
+        "translation": "head (strike)"
+      },
+      {
+        "romaji": "kote",
+        "kanji": "小手",
+        "translation": "arm (strike)"
+      },
+      {
+        "romaji": "dou",
+        "kanji": "胴",
+        "translation": "right torso (strike)"
+      },
+      {
+        "romaji": "hidari dou (gyaku dou)",
+        "kanji": "左胴 (逆胴)",
+        "translation": "left torso (strike), (reverse torso strike)"
+      },
+      {
+        "romaji": "tsuki",
+        "kanji": "突き",
+        "translation": "thrust (throat)"
+      },
+      {
+        "romaji": "uchi",
+        "kanji": "打ち",
+        "translation": "strike"
+      },
+      {
+        "romaji": "suburi",
+        "kanji": "素振り",
+        "translation": "swing"
+      },
+      {
+        "romaji": "jyouge-buri",
+        "kanji": "上下振り",
+        "translation": "top to bottom swing"
+      },
+      {
+        "romaji": "naname-buri",
+        "kanji": "斜め振り",
+        "translation": "diagonal swing"
+      },
+      {
+        "romaji": "sayu-men",
+        "kanji": "左右面",
+        "translation": "left and right head strike"
+      },
+      {
+        "romaji": "shou-men-suburi",
+        "kanji": "正面素振り",
+        "translation": "head swing"
+      },
+      {
+        "romaji": "haya-suburi",
+        "kanji": "早素振り",
+        "translation": "fast head swing"
+      }
+    ]
+  },
+  {
+    "key": "5",
+    "section": "Tournament",
+    "terms": [
+      {
+        "romaji": "taikai",
+        "kanji": "大会",
+        "translation": "tournament"
+      },
+      {
+        "romaji": "shiai",
+        "kanji": "試合",
+        "translation": "match"
+      },
+      {
+        "romaji": "shinpan",
+        "kanji": "審判",
+        "translation": "referee / judge"
+      },
+      {
+        "romaji": "tasuki",
+        "kanji": "襷",
+        "translation": "flag on competitor's back (sash)"
+      },
+      {
+        "romaji": "hajime",
+        "kanji": "始め",
+        "translation": "start (match)"
+      },
+      {
+        "romaji": "yame",
+        "kanji": "止め",
+        "translation": "stop (match)"
+      },
+      {
+        "romaji": "men-ari",
+        "kanji": "面あり",
+        "translation": "men point"
+      },
+      {
+        "romaji": "kote-ari",
+        "kanji": "小手あり",
+        "translation": "kote point"
+      },
+      {
+        "romaji": "dou-ari",
+        "kanji": "胴あり",
+        "translation": "dou point"
+      },
+      {
+        "romaji": "tsuki-ari",
+        "kanji": "突きあり",
+        "translation": "tsuki point"
+      },
+      {
+        "romaji": "ippon-ari",
+        "kanji": "一本あり",
+        "translation": "one point (given)"
+      },
+      {
+        "romaji": "nihon-me",
+        "kanji": "二本目",
+        "translation": "second point"
+      },
+      {
+        "romaji": "shoubu",
+        "kanji": "勝負",
+        "translation": "third point (tied)"
+      },
+      {
+        "romaji": "shoubu-ari",
+        "kanji": "勝負あり",
+        "translation": "winner decided (match ends)"
+      },
+      {
+        "romaji": "hiki-wake",
+        "kanji": "引き分け",
+        "translation": "draw (match ends)"
+      },
+      {
+        "romaji": "en-chou",
+        "kanji": "延長",
+        "translation": "overtime / extension"
+      },
+      {
+        "romaji": "han-tei",
+        "kanji": "判定",
+        "translation": "judgement / decision (match decider)"
+      },
+      {
+        "romaji": "wakare",
+        "kanji": "別れ",
+        "translation": "separate"
+      },
+      {
+        "romaji": "gougi",
+        "kanji": "合議",
+        "translation": "judge consensus"
+      },
+      {
+        "romaji": "hansoku",
+        "kanji": "反則",
+        "translation": "foul / penalty"
+      },
+      {
+        "romaji": "hansoku ikkai",
+        "kanji": "反則一回",
+        "translation": "first foul / penalty"
+      },
+      {
+        "romaji": "hansoku nikai",
+        "kanji": "反則二回",
+        "translation": "second foul / penalty"
+      }
+    ]
+  }
+]
