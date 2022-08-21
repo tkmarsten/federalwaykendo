@@ -40,7 +40,7 @@ const Dojo = () => {
           <Card.Header>Tuesday</Card.Header>
           <ListGroup className="list-group-flush">
             <ListGroupItem>Beginning 6:30-7:20pm</ListGroupItem>
-            <ListGroupItem>Continuing 6:50-7:40pm</ListGroupItem>
+            <ListGroupItem>Intermediate 6:30-7:20pm</ListGroupItem>
             <ListGroupItem>Advanced 6:50-8:30pm</ListGroupItem>
           </ListGroup>
         </Card>

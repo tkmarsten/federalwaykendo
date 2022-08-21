@@ -1,14 +1,14 @@
 [
   {
     "section": "Beginning",
-    "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=3468743&_csrf_token=6f619d92fd82c66de4b161013e2f70ab3d25cfd3f2ca73e1925e1b02dede48de"
+    "url": "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/search.html?module=AR&fmid=13234012"
   },
   {
-    "section": "Continuing",
-    "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3468769&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
+    "section": "Intermediate",
+    "url": "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/search.html?module=AR&fmid=13234036"
   },
   {
     "section": "Advanced",
-    "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3468783&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
+    "url": "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/search.html?module=AR&fmid=13234060"
   }
 ]

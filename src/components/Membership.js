@@ -14,8 +14,7 @@ const Membership = () => {
                 <Card.Title>{section.section}</Card.Title>
                 <Button variant="primary"
                   href={section.url}
-                  target="_blank"
-                  disabled>
+                  target="_blank">
                   Register
                 </Button>
               </Card.Body>
