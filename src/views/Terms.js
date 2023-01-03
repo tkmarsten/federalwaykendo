@@ -1,38 +1,51 @@
-import { Accordion, Container, Table } from 'react-bootstrap'
 import termsData from '../data/terms.json'
+import {
+  Table, Thead, Tbody, Tr, Th, Td, TableContainer,
+  Container, Accordion, AccordionItem, AccordionButton, AccordionIcon,
+  AccordionPanel, Heading, Box
+} from '@chakra-ui/react'
 
 const Terms = () => {
   return (
     <Container className="terms">
-      <h3 className="mb-4 pt-4">Terminology</h3>
-      <Accordion flush>
+      <Heading as={'h3'} mb='2rem'>Terminology</Heading>
+      <Accordion allowToggle>
         {termsData.map((group) => (
-          <Accordion.Item eventKey={group.key}>
-            <Accordion.Header><em>{group.section}</em></Accordion.Header>
-            <Accordion.Body>
-              <Table>
-                <thead>
-                  <tr>
-                    <th>Romaji</th>
-                    <th>Kanji</th>
-                    <th>Translation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {group.terms.map((term) => (
-                    <tr>
-                      <td>{term.romaji}</td>
-                      <td>{term.kanji}</td>
-                      <td>{term.translation}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </Table>
-            </Accordion.Body>
-          </Accordion.Item>
+          <AccordionItem key={group.key}>
+            <Heading as={'h6'}>
+              <AccordionButton>
+                <Box as={'span'} flex='1' textAlign='left'>
+                  {group.section}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </Heading>
+            <AccordionPanel>
+              <TableContainer>
+                <Table variant='simple'>
+                  <Thead>
+                    <Tr>
+                      <Th>Romaji</Th>
+                      <Th>Kanji</Th>
+                      <Th>Translation</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    {group.terms.map((term) => (
+                      <Tr>
+                        <Td>{term.romaji}</Td>
+                        <Td>{term.kanji}</Td>
+                        <Td>{term.translation}</Td>
+                      </Tr>
+                    ))}
+                  </Tbody>
+                </Table>
+              </TableContainer>
+            </AccordionPanel>
+          </AccordionItem>
         ))}
       </Accordion>
-    </Container>
+    </Container >
   )
 }
 

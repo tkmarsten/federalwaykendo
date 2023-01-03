@@ -1,15 +1,17 @@
-import { Container } from 'react-bootstrap'
+import { Box, Text, Heading, Container, Stack } from '@chakra-ui/react'
 
 const Announcement = () => {
   return (
-    <Container fluid className="announcements bg-dark text-white p-4">
-      <Container className="text-center">
-        <h3 className="mb-4">Announcements</h3>
-        <h5>Late autumn quarter begins 1 November!</h5>
-        <p>Please register with the links below.<br />
-          Masks are not required, but preferred.</p>
+    <Box className='announcements' bg='#252525' color='white' p='2rem'>
+      <Container>
+        <Stack align='center'>
+          <Heading as='h3' mb='1rem'>Announcements</Heading>
+          <Text>Winter quarter begins 4 January!</Text>
+          <Text>Please register with the links below.</Text>
+          <Text>Masks are not required, but preferred.</Text>
+        </Stack>
       </Container>
-    </Container>
+    </Box>
   )
 }
 

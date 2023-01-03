@@ -1,23 +1,25 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaEnvelope } from 'react-icons/fa'
 import dojoData from '../data/dojo.json'
+import { Container, Image, Heading, Icon, Link, Text, Box, Grid, GridItem, Stack } from '@chakra-ui/react'
+import { FiMail } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-center p-4">
-      <Container className="text-white">
-        <Row className="d-flex align-items-center">
-          <Col sm={6} className="mb-4">
-            <img alt="logo" src={`img/` + dojoData.logo} width="50" height="60" />
-          </Col>
-          <Col sm={6} className="mb-4">
-            <h5>Contact us</h5>
-            <a href={`mailto:` + dojoData.email} className="text-white"><FaEnvelope size="45" /></a>
-          </Col>
-        </Row>
-        <h6>© 2022 {dojoData.dojo} Kendo Club</h6>
+    <Box as='footer' bg='#252525' py='2rem' color='white'>
+      <Container centerContent>
+        <Grid templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} align='center' gap={5} mb='2rem'>
+          <GridItem>
+            <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' />
+          </GridItem>
+          <GridItem>
+            <Stack align='center'>
+              <Heading as='h5' size='md'>Contact us</Heading>
+              <Link href={`mailto:` + dojoData.email}><Icon as={FiMail} boxSize={8} /></Link>
+            </Stack>
+          </GridItem>
+        </Grid>
+        <Text>&copy; 2023 {dojoData.dojo} Kendo Club</Text>
       </Container>
-    </footer >
+    </Box>
   )
 }
 

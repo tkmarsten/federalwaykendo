@@ -1,50 +1,64 @@
-import { Container, Card, Row, Col, Button, ListGroup, ListGroupItem } from 'react-bootstrap'
 import dojoData from '../data/dojo.json'
+import { Container, Stack, Heading, Text, Button, Link, Grid, GridItem, Icon } from '@chakra-ui/react'
+import { FiClock } from 'react-icons/fi'
 
 const Dojo = () => {
   return (
-    <Container className="col-lg-6 p-4">
-      <h3 className="mb-4">Our Dojo</h3>
-      <Card>
-        <Row>
-          <Col md={4}>
-            <iframe
-              src={dojoData.map}
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              style={{ border: 0 }}
-              title="map">
-            </iframe>
-          </Col>
-          <Col md={8}>
-            <Card.Body>
-              <Card.Title>
-                {dojoData.facility}
-              </Card.Title>
-              <Card.Text>
-                {dojoData.room} <br />
-                {dojoData.address}
-              </Card.Text>
-              <Button
-                variant="primary"
-                href={dojoData.website}
-                target="_blank"
-              >
-                Website
-              </Button>
-            </Card.Body>
-          </Col>
-        </Row>
-        <Card>
-          <Card.Header>Tuesday</Card.Header>
-          <ListGroup className="list-group-flush">
-            <ListGroupItem>Beginning 6:30-7:20pm</ListGroupItem>
-            <ListGroupItem>Intermediate 6:30-7:20pm</ListGroupItem>
-            <ListGroupItem>Advanced 6:50-8:30pm</ListGroupItem>
-          </ListGroup>
-        </Card>
-      </Card>
+    <Container my='4rem'>
+      <Heading as={'h3'} mb='2rem'>Our Dojo</Heading>
+      <Grid gap={10}
+        templateAreas={{
+          base: `"map"
+                "info"
+                "clock"
+                "monday"
+                "wednesday"`,
+          md:
+            `"info map"
+            "clock clock"
+            "monday wednesday"`}}>
+        <GridItem area={'map'}>
+          <iframe
+            src={dojoData.map}
+            title="map">
+          </iframe>
+        </GridItem>
+        <GridItem area={'info'}>
+          <Stack align='center'>
+            <Text>{dojoData.facility}</Text>
+            <Text>{dojoData.room}</Text>
+            <Text>{dojoData.address}</Text>
+            <Link href={dojoData.website} isExternal><Button>Website</Button></Link>
+          </Stack></GridItem>
+        <GridItem area={'monday'}>
+          <Stack align='center'>
+            <Text as='b'>Monday</Text>
+            <Grid gap={1}>
+              <Stack direction='row' justify='space-between'>
+                <Text>Beginning</Text>
+                <Text>6:30-7:15pm</Text>
+              </Stack>
+              <Stack direction='row' justify='space-between'>
+                <Text>Continuing</Text>
+                <Text>7:15-8pm</Text>
+              </Stack>
+            </Grid>
+          </Stack>
+        </GridItem>
+        <GridItem area={'clock'}>
+          <Icon as={FiClock} boxSize={10} />
+        </GridItem>
+        <GridItem area={'wednesday'}>
+          <Stack align='center' area={'wednesday'}>
+            <Text as='b'>Wednesday</Text>
+            <Grid>
+              <Stack direction='row' justify='space-between'>
+                <Text>Advanced</Text>
+                <Text>6:30-8pm</Text>
+              </Stack>
+            </Grid>
+          </Stack></GridItem>
+      </Grid>
     </Container>
   )
 }

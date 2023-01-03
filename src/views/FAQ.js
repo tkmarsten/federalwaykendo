@@ -1,25 +1,35 @@
-import { Container, Accordion } from 'react-bootstrap'
 import faqData from '../data/faq.json'
+import { Flex, Box, Container, Heading, Accordion, AccordionItem, AccordionPanel, AccordionButton, AccordionIcon } from '@chakra-ui/react'
 
 const FAQ = () => {
-
   return (
-    <Container className="faq">
-      <h3 className="mb-4 pt-4">Frequently Asked Questions</h3>
-      {faqData.map((group) => (
-        <>
-          <h6>{group.header}</h6>
-          <Accordion flush className="mb-5 accordion">
-            {group.questions.map((questions) => (
-              <Accordion.Item eventKey={questions.key}>
-                <Accordion.Header><em>{questions.question}</em></Accordion.Header>
-                <Accordion.Body>{questions.answer}</Accordion.Body>
-              </Accordion.Item>
-            ))}
-          </Accordion>
-        </>
-      ))}
-    </Container>
+    <Flex align='start'>
+      <Container className='faq'>
+        <Heading as={'h3'} mb='2rem'>Frequently Asked Questions</Heading>
+        {faqData.map((group) => (
+          <Box key={group.header}>
+            <Heading as={'h6'} size='xs' mb='1rem'>{group.header}</Heading>
+            <Accordion allowToggle mb='2rem'>
+              {group.questions.map((questions) => (
+                <AccordionItem key={questions.key}>
+                  <Heading as={'h6'}>
+                    <AccordionButton>
+                      <Box as={'span'} flex='1' textAlign='left'>
+                        {questions.question}
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </Heading>
+                  <AccordionPanel>
+                    {questions.answer}
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </Box>
+        ))}
+      </Container>
+    </Flex>
   )
 }
 

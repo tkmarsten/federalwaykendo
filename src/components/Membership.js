@@ -1,28 +1,21 @@
-import { Row, Col, Card, Container, Button } from 'react-bootstrap'
 import membershipData from '../data/membership.json'
+import { Container, Heading, Stack, Text, Button, Link } from '@chakra-ui/react'
 
 const Membership = () => {
-
   return (
-    <Container className="col-lg-6 p-4">
-      <h3 className="mb-4">Membership</h3>
-      <Row className="row-cols-1 g-3">
+    <Container my='4rem'>
+      <Heading as={'h3'} mb='2rem'>Membership</Heading>
+      <Text>Register</Text>
+      <Stack direction={{ base: 'column', md: 'row' }} justify='center' mt='1rem'>
         {membershipData.map((section) => (
-          <Col md={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>{section.section}</Card.Title>
-                <Button variant="primary"
-                  href={section.url}
-                  target="_blank">
-                  Register
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+          <Link href={section.url} isExternal key={section.section}>
+            <Button>
+              {section.section}
+            </Button>
+          </Link>
         ))}
-      </Row>
-    </Container >
+      </Stack>
+    </Container>
   )
 }
 

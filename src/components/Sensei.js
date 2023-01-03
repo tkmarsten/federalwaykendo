@@ -1,26 +1,21 @@
-import { Container, Row, Col, Card } from 'react-bootstrap'
 import senseiData from '../data/sensei.json'
+import SenseiCard from './SenseiCard'
+import { Container, Heading, Grid, Box, GridItem } from '@chakra-ui/react'
 
 const Sensei = () => {
-
   return (
-    <Container fluid className="bg-light p-4">
-      <Container className="col-lg-6">
-        <h3 className="mb-4">Our Sensei</h3>
-        <Row className="row-cols-1 g-2">
+    <Box bg='gray.100' py='4rem' align='center'>
+      <Container>
+        <Heading as={'h3'} mb='2rem'>Our Sensei</Heading>
+        <Grid justifyContent='center' templateColumns={{ md: 'repeat(2, 1fr)' }} gap={10}>
           {senseiData.map((sensei) => (
-            <Col md={6}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>{sensei.name}</Card.Title>
-                  <Card.Subtitle className="text-muted">{sensei.rank}</Card.Subtitle>
-                </Card.Body>
-              </Card>
-            </Col>
+            <GridItem key={sensei.name}>
+              <SenseiCard name={sensei.name} rank={sensei.rank} />
+            </GridItem>
           ))}
-        </Row>
+        </Grid>
       </Container>
-    </Container>
+    </Box>
   )
 }
 
