@@ -4,8 +4,8 @@ import { FiMail } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <Box as='footer' bg='#252525' py='2rem' color='white'>
-      <Container centerContent>
+    <Box as='footer' bg='#252525' color='white'>
+      <Container py='2rem' centerContent>
         <Grid templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} align='center' gap={5} mb='2rem'>
           <GridItem>
             <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' />

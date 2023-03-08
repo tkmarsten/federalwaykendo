@@ -13,7 +13,9 @@ const NavBar = () => {
 
   return (
     <Flex as={'nav'} p={3}>
-      <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+      <Link as={RouterLink} to='/'>
+        <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+      </Link>
       <Spacer />
       <Menu>
         <MenuButton
@@ -37,7 +39,13 @@ const NavBar = () => {
             <DrawerBody mt={5}>
               <Flex direction='column' align='center'>
                 <Link as={RouterLink} to='/' className='nav-link'>Home</Link>
-                <Link as={RouterLink} to='/about' className='nav-link'>About</Link>
+                <Menu closeOnSelect={true}>
+                  <MenuButton className='nav-link'>About</MenuButton>
+                  <MenuList>
+                    <Link as={RouterLink} to='/about'><MenuItem>Dojo</MenuItem></Link>
+                    <Link as={RouterLink} to='/class'><MenuItem>Class</MenuItem></Link>
+                  </MenuList>
+                </Menu>
                 <Link as={RouterLink} to='/faq' className='nav-link'>FAQ</Link>
                 <Menu closeOnSelect={true}>
                   <MenuButton className='nav-link'>Resources</MenuButton>
@@ -46,6 +54,7 @@ const NavBar = () => {
                     <Link href='https://youtu.be/cpidZRL5ZbI' isExternal><MenuItem>Warmup<ExternalLinkIcon mx='2px' /></MenuItem></Link>
                   </MenuList>
                 </Menu>
+                <Link as={RouterLink} to='/gallery' className='nav-link'>Gallery</Link>
                 <Link href={dojoData.calendar} isExternal className='nav-link'>
                   Calendar <ExternalLinkIcon mx='2px' />
                 </Link>
