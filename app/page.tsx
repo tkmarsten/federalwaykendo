@@ -7,7 +7,7 @@ import Contact from "@/app/components/contact";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-lg px-6 mx-auto space-y-16">
+    <main className="space-y-16">
       <Header />
       <Location />
       <Classes />

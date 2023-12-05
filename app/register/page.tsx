@@ -29,7 +29,7 @@ export default function Register() {
   ];
 
   return (
-    <main className="max-w-screen-lg min-h-screen py-10 px-6 mx-auto space-y-20">
+    <main className="min-h-screen py-10 space-y-20">
       <div className="w-full flex flex-col md:flex-row bg-secondary p-4 rounded-lg gap-4 justify-around">
         <div>
           <p className="text-sm">Current quarter</p>
