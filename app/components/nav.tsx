@@ -10,15 +10,18 @@ import {
   NavbarMenuToggle,
   NavbarMenuItem,
   Link,
-  Image,
+  Button,
 } from "@nextui-org/react";
+import NextImage from "next/image";
+import { FaHouse, FaFilePen, FaCircleQuestion } from "react-icons/fa6";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const menuItems = [
-    { text: "Home", link: "/" },
-    { text: "Register", link: "/register" },
+    { text: "Home", link: "/", icon: <FaHouse /> },
+    { text: "Register", link: "/register", icon: <FaFilePen /> },
+    { text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> },
   ];
 
   return (
@@ -30,7 +33,7 @@ export default function Nav() {
       <NavbarContent>
         <NavbarBrand>
           <Link href="/" className="text-black">
-            <Image
+            <NextImage
               src="/logo.png"
               width={45}
               height={45}
@@ -44,18 +47,21 @@ export default function Nav() {
         />
       </NavbarContent>
 
-      <NavbarMenu className="text-center">
+      <NavbarMenu className="lg:w-1/3 lg:left-[66%] gap-0">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index} max-w-screen-lg`}>
-            <Link
+          <NavbarMenuItem key={`${item}-${index}`} className="border-b-2">
+            <Button
+              as={Link}
               href={item.link}
+              startContent={item.icon}
+              variant="light"
               size="lg"
-              className={clsx("text-green-700", {
+              className={clsx("text-foreground-500 w-full justify-start px-2", {
                 "text-green-500": pathname === item.link,
               })}
             >
               {item.text}
-            </Link>
+            </Button>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
