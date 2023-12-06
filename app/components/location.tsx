@@ -1,5 +1,6 @@
-import { Image, Link, Button } from "@nextui-org/react";
+import { Link, Button } from "@nextui-org/react";
 import { SiGooglemaps } from "react-icons/si";
+import NextImage from "next/image";
 
 export default function Location() {
   return (
@@ -18,13 +19,12 @@ export default function Location() {
         Our club has been meeting in the community center&apos;s multipurpose
         rooms for the past couple years.
       </p>
-      <Image
+      <NextImage
         src="/location.jpg"
         width={1000}
         height={1000}
-        radius="sm"
         alt="An image of the main entrance of Federal Way Community Center"
-        className="mt-4"
+        className="mt-4 rounded-lg"
       />
       <Link
         href="https://www.absherco.com/project/federal-way-community-center/"

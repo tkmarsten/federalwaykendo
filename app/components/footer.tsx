@@ -1,5 +1,6 @@
-import { Image, Divider, Link } from "@nextui-org/react";
+import { Divider, Link } from "@nextui-org/react";
 import { SiGmail, SiGooglecalendar } from "react-icons/si";
+import NextImage from "next/image";
 
 export default function Footer() {
   return (
@@ -39,7 +40,7 @@ export default function Footer() {
         </Link>
         <Divider className="bg-neutral-600 my-4" />
         <div className="flex justify-center my-2">
-          <Image
+          <NextImage
             src="/logo.png"
             alt="Federal Way Kendo logo"
             width={50}

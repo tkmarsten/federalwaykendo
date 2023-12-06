@@ -3,10 +3,10 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  Image,
   Link,
   Button,
 } from "@nextui-org/react";
+import NextImage from "next/image";
 
 export default function Classes() {
   const cardData = [
@@ -41,10 +41,11 @@ export default function Classes() {
           return (
             <Card key={data.title}>
               <CardHeader>
-                <Image
+                <NextImage
                   src={"/" + data.image + ".png"}
                   alt="Image"
                   width={80}
+                  height={80}
                   className="aspect-square object-contain"
                 />
                 <div className="flex flex-col pl-4 text-start">
