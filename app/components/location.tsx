@@ -4,7 +4,7 @@ import NextImage from "next/image";
 
 export default function Location() {
   return (
-    <section>
+    <section id="location">
       <p className="text-sm text-secondary">Location</p>
       <p className="text-xl">Federal Way Dojo</p>
       <p className="text-sm">

@@ -1,5 +1,5 @@
 "use client";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem, Link, Button } from "@nextui-org/react";
 
 export default function FAQ() {
   const data = [
@@ -22,8 +22,8 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-16 bg-secondary/25 shadow-[0_0_0_100vmax_#adc7d943] [clip-path:inset(0_-100vmax)]">
-      <p className="text-sm text-secondary">FAQ</p>
+    <section className="py-16">
+      <p className="text-sm text-secondary font-medium">FAQs</p>
       <Accordion variant="splitted" className="mt-2">
         {data.map((content, index) => (
           <AccordionItem
@@ -35,6 +35,35 @@ export default function FAQ() {
           </AccordionItem>
         ))}
       </Accordion>
+      <div className="mt-8">
+        <p className="text-2xl text-center font-semibold">
+          Still have questions?
+        </p>
+        <p className="text-center">
+          View our full FAQ page or contact us with any further questions.
+        </p>
+        <div className="flex justify-center gap-8 mt-4">
+          <Button
+            as={Link}
+            href="/faq"
+            radius="sm"
+            size="md"
+            variant="light"
+            className="font-medium ring-2 ring-inset ring-primary text-primary"
+          >
+            FAQ
+          </Button>
+          <Button
+            as={Link}
+            href="mailto:federalwaykendoclub@gmail.com"
+            radius="sm"
+            size="md"
+            className="text-white font-medium bg-primary shadow"
+          >
+            Contact
+          </Button>
+        </div>
+      </div>
     </section>
   );
 }

@@ -4,53 +4,53 @@ import Affiliations from "@/app/components/affiliations";
 
 export default function Header() {
   return (
-    <header className="min-h-screen grid lg:grid-cols-3 items-center max-lg:space-y-16">
-      <div className="space-y-4 col-span-full lg:col-span-2 lg:max-w-lg max-lg:pt-4">
-        <p className="text-3xl md:text-6xl leading-tight">
+    <header className="min-h-[calc(100vh-64px)] grid md:grid-cols-2 gap-8 items-center max-md:mt-8">
+      <div className="flex flex-col space-y-4 justify-center md:col-span-1 md:h-4/5 lg:p-4">
+        <p className="text-3xl lg:text-6xl leading-tight">
           Start your kendo journey here
         </p>
         <p className="text-sm">
           Learn and practice physical and mental discipline through the
           traditional Japanese martial art of kendo, the way of the sword.
         </p>
-        <Button
-          href="#"
-          as={Link}
-          radius="sm"
-          size="md"
-          variant="light"
-          className="mr-4 font-medium ring-2 ring-inset ring-primary text-primary"
-        >
-          Learn more
-        </Button>
-        <Button
-          href="#"
-          as={Link}
-          radius="sm"
-          size="md"
-          className="text-white font-medium bg-primary shadow"
-        >
-          Register
-        </Button>
-      </div>
-      <div className="relative w-full max-w-[300px] h-[350px] mx-auto">
-        <NextImage
-          fill
-          src="/header.jpg"
-          alt="Picture of kendo"
-          className="object-cover rounded-lg"
-        />
-        <div className="w-[70%] text-neutral-700 bg-secondary overflow-hidden p-3 absolute rounded-3xl bottom-1 shadow-md z-10 left-1/2 translate-x-[-50%] translate-y-[50%]">
-          <p>🍁 Autumn Quarter</p>
-          <p>📅 Sept - Dec</p>
+        <div>
+          <Button
+            href="#location"
+            as={Link}
+            radius="sm"
+            className="mr-4 font-medium text-white bg-primary"
+          >
+            Learn more
+          </Button>
+          <Button
+            href="/register"
+            as={Link}
+            radius="sm"
+            variant="light"
+            className="font-medium ring-2 ring-inset ring-primary text-primary"
+          >
+            Register
+          </Button>
         </div>
       </div>
-      <div className="col-span-full">
+      <div className="md:col-span-1 relative w-full h-80 lg:h-4/5">
+        <NextImage
+          src="/header.jpg"
+          alt="Picture of kendo"
+          fill
+          className="object-cover rounded-lg"
+        />
+      </div>
+      {/*<div className="w-[70%] text-neutral-700 bg-secondary overflow-hidden p-3 absolute rounded-3xl bottom-1 shadow-md z-10 left-1/2 translate-x-[-50%] translate-y-[50%]">
+          <p>🍁 Autumn Quarter</p>
+          <p>📅 Sept - Dec</p>
+  </div>*/}
+      {/*<div className="col-span-full">
         <p className="text-sm text-secondary">Affiliations</p>
         <Divider />
         <Affiliations />
         <Divider />
-      </div>
+</div>*/}
     </header>
   );
 }

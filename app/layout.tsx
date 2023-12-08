@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     template: "%s | Federal Way Kendo",
     default: "Federal Way Kendo",
   },
-  description: "Official website of Federal Way Kendo Club.",
+  description:
+    "The official website of the Federal Way Kendo Club. Live in the area and are looking to start kendo? Join here!",
   metadataBase: new URL("https://www.federalwaykendo.org/"),
   icons: {
     icon: "/logo.png",
@@ -25,7 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="text-foreground bg-background scroll-smooth scroll-pt-[64px]"
+    >
       <body className={`${inter.className}`}>
         <Providers>
           <Nav />

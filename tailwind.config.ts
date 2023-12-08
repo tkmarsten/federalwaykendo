@@ -20,7 +20,23 @@ const config: Config = {
               DEFAULT: "#4c842c",
             },
             secondary: {
+              DEFAULT: "#92bfde",
+            },
+            background: {
+              DEFAULT: "#f4f4f4",
+            },
+          }
+        },
+        dark: {
+          colors: {
+            primary: {
+              DEFAULT: "#4c842c",
+            },
+            secondary: {
               DEFAULT: "#adc7d9",
+            },
+            background: {
+              DEFAULT: "#262626",
             }
           }
         }

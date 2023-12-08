@@ -30,7 +30,7 @@ export default function Register() {
 
   return (
     <main className="min-h-screen py-10 space-y-20">
-      <div className="w-full flex flex-col md:flex-row bg-secondary p-4 rounded-lg gap-4 justify-around">
+      <div className="w-full flex flex-col md:flex-row text-black bg-secondary p-4 rounded-lg gap-4 justify-around">
         <div>
           <p className="text-sm">Current quarter</p>
           <p>Autumn, 2023</p>
