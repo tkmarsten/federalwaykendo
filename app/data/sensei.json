@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Curtis Marsten",
+    "rank": "Renshi 6 Dan",
+    "title": "Head Sensei",
+    "instruction": [
+      {
+        "role": "Head Sensei",
+        "dojo": "Kent Kendo Club",
+        "time": "2001-Present"
+      },
+      {
+        "role": "Head Sensei",
+        "dojo": "Federal Way Kendo Club",
+        "time": "2009-Present"
+      }
+    ],
+    "tournament": [],
+    "admin": []
+  },
+  {
+    "name": "Vicki Marsten",
+    "rank": "4 Dan",
+    "title": "Head Sensei",
+    "instruction": [
+      {
+        "role": "Head Sensei",
+        "dojo": "Kent Kendo Club",
+        "time": "2001-Present"
+      },
+      {
+        "role": "Head Sensei",
+        "dojo": "Federal Way Kendo Club",
+        "time": "2009-Present"
+      },
+      {
+        "role": "Assistant Advisor",
+        "dojo": "UW Kendo Club",
+        "time": "1990-1999"
+      },
+      {
+        "role": "Assistant Coach - Youth",
+        "dojo": "Team PNKF",
+        "time": "2011"
+      }
+    ],
+    "tournament": [
+      {
+        "place": "2nd Place",
+        "division": "2 Dan and Up",
+        "taikai": "Steveston Taikai",
+        "time": "1990"
+      },
+      {
+        "place": "1st Place",
+        "division": "2 Dan and Up",
+        "taikai": "Steveston Taikai",
+        "time": "1991"
+      },
+      {
+        "place": "1st Place",
+        "division": "Team",
+        "taikai": "3rd PNKF Women's Taikai",
+        "time": "2007"
+      }
+    ],
+    "admin": [
+      {
+        "role": "President",
+        "organization": "PNKF Board",
+        "time": "1997-1998"
+      },
+      {
+        "role": "Representative",
+        "organization": "PNKF Board",
+        "time": "2012-Present"
+      }
+    ]
+  },
+  {
+    "name": "Tiarnan Marsten",
+    "rank": "4 Dan",
+    "title": "Assistant Sensei / Coach",
+    "instruction": [
+      {
+        "role": "Assistant Sensei",
+        "dojo": "Kent Kendo Club",
+        "time": "2021-Present"
+      },
+      {
+        "role": "Assistant Sensei",
+        "dojo": "Federal Way Kendo Club",
+        "time": "2021-Present"
+      },
+      {
+        "role": "Assistant Coach - Youth",
+        "dojo": "Team PNKF",
+        "time": "2017-Present"
+      }
+    ],
+    "tournament": [
+      {
+        "place": "3rd Place",
+        "division": "Boys Sr. Youth Individuals",
+        "taikai": "14th AUSKF Championship",
+        "time": "2017"
+      },
+      {
+        "place": "4th Place",
+        "division": "Boys Jr. Youth Individuals",
+        "taikai": "13th AUSKF Championship",
+        "time": "2014"
+      },
+      {
+        "place": "3rd Place",
+        "division": "Boys 12-13 Individuals",
+        "taikai": "3rd AUSKF Junior Open Championship",
+        "time": "2012"
+      },
+      {
+        "place": "3rd Place",
+        "division": "Boys Jr. Youth Team",
+        "taikai": "12th AUSKF Championship",
+        "time": "2011"
+      }
+    ],
+    "admin": [
+      {
+        "role": "Representative",
+        "organization": "PNKF Board",
+        "time": "2016-Present"
+      },
+      {
+        "role": "Taikai Co-chair",
+        "organization": "PNKF Annual Taikai",
+        "time": "2023"
+      },
+      {
+        "role": "IT Committee Chair",
+        "organization": "PNKF Board",
+        "time": "2023-2024"
+      }
+    ]
+  }
+]
