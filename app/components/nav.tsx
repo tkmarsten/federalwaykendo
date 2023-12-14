@@ -44,6 +44,7 @@ export default function Nav() {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={false}
+      maxWidth="xl"
       className="z-50 shadow-md"
     >
       <NavbarContent>

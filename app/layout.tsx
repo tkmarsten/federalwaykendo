@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <Providers>
           <Nav />
-          <div className="max-w-screen-lg mx-auto px-6">{children}</div>
+          <div className="max-w-screen-xl mx-auto px-6">{children}</div>
           <Footer />
         </Providers>
       </body>

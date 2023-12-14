@@ -5,7 +5,7 @@ import NextImage from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-neutral-800 text-white py-10">
-      <div className="max-w-screen-lg m-auto px-6">
+      <div className="max-w-screen-xl m-auto px-6">
         <div className="space-y-4 text-sm">
           <div className="basis-1/2">
             <p className="text-secondary">Location</p>

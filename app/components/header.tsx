@@ -33,7 +33,7 @@ export default function Header() {
           </Button>
         </div>
       </div>
-      <div className="md:col-span-1 relative w-full h-80 lg:h-4/5">
+      <div className="md:col-span-1 relative w-full h-80 lg:h-3/5">
         <NextImage
           src="/header.jpg"
           alt="Picture of kendo"
