@@ -33,21 +33,27 @@ export default function SenseiTable() {
           <div>
             <Tabs aria-label="tabs" size="sm" className="flex">
               <Tab title="Instruction">
-                <Table
-                  removeWrapper
-                  layout="fixed"
-                  className="overflow-x-scroll"
-                >
+                <Table removeWrapper layout="fixed">
                   <TableHeader>
                     <TableColumn>Role</TableColumn>
-                    <TableColumn>Dojo</TableColumn>
+                    <TableColumn className="hidden lg:table-cell">
+                      Dojo
+                    </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
                   <TableBody>
                     {sensei.instruction.map((row, index) => (
                       <TableRow key={index}>
-                        <TableCell>{row.role}</TableCell>
-                        <TableCell>{row.dojo}</TableCell>
+                        <TableCell className="font-medium">
+                          {row.role}
+                          <dl className="lg:hidden font-normal">
+                            <dt className="sr-only">Dojo</dt>
+                            <dd className="text-gray-500 mt-1">{row.dojo}</dd>
+                          </dl>
+                        </TableCell>
+                        <TableCell className="hidden lg:table-cell">
+                          {row.dojo}
+                        </TableCell>
                         <TableCell>{row.time}</TableCell>
                       </TableRow>
                     ))}
@@ -58,15 +64,27 @@ export default function SenseiTable() {
                 <Table removeWrapper>
                   <TableHeader>
                     <TableColumn>Placement</TableColumn>
-                    <TableColumn>Division</TableColumn>
+                    <TableColumn className="hidden lg:table-cell">
+                      Division
+                    </TableColumn>
                     <TableColumn>Tournament</TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
                   <TableBody>
                     {sensei.tournament.map((row, index) => (
                       <TableRow key={index}>
-                        <TableCell>{row.place}</TableCell>
-                        <TableCell>{row.division}</TableCell>
+                        <TableCell className="font-medium">
+                          {row.place}
+                          <dl className="lg:hidden font-normal">
+                            <dt className="sr-only">Dojo</dt>
+                            <dd className="text-gray-500 mt-1">
+                              {row.division}
+                            </dd>
+                          </dl>
+                        </TableCell>
+                        <TableCell className="hidden lg:table-cell">
+                          {row.division}
+                        </TableCell>
                         <TableCell>{row.taikai}</TableCell>
                         <TableCell>{row.time}</TableCell>
                       </TableRow>
@@ -78,14 +96,26 @@ export default function SenseiTable() {
                 <Table removeWrapper>
                   <TableHeader>
                     <TableColumn>Position</TableColumn>
-                    <TableColumn>Organization</TableColumn>
+                    <TableColumn className="hidden lg:table-cell">
+                      Organization
+                    </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
                   <TableBody>
                     {sensei.admin.map((row, index) => (
                       <TableRow key={index}>
-                        <TableCell>{row.role}</TableCell>
-                        <TableCell>{row.organization}</TableCell>
+                        <TableCell className="font-medium">
+                          {row.role}{" "}
+                          <dl className="lg:hidden font-normal">
+                            <dt className="sr-only">Dojo</dt>
+                            <dd className="text-gray-500 mt-1">
+                              {row.organization}
+                            </dd>
+                          </dl>
+                        </TableCell>
+                        <TableCell className="hidden lg:table-cell">
+                          {row.organization}
+                        </TableCell>
                         <TableCell>{row.time}</TableCell>
                       </TableRow>
                     ))}

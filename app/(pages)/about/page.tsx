@@ -4,7 +4,7 @@ import SenseiTable from "@/app/components/sensei-table";
 
 export default function About() {
   return (
-    <main className="space-y-8">
+    <main className="space-y-8 mt-16">
       <div className="flex flex-col lg:flex-row-reverse items-center">
         <div className="flex-1">
           <NextImage
@@ -18,7 +18,7 @@ export default function About() {
         <p className="text-5xl text-center flex-1">Federal Way Kendo Club</p>
       </div>
       <section>
-        <p className="text-sm text-secondary">About Us</p>
+        <p className="text-sm text-secondary font-semibold">About Us</p>
         <p>
           Federal Way Kendo Club was established in 2009, and was originally the
           Puyallup Kendo Club. The club has been providing instruction of kendo
@@ -29,7 +29,7 @@ export default function About() {
         </p>
       </section>
       <section>
-        <p className="text-sm text-secondary">Instructors</p>
+        <p className="text-sm text-secondary font-semibold">Instructors</p>
         <p>
           Our head sensei both have over 40 years of kendo experience. This also
           includes many years of experience teaching both at the local level and
