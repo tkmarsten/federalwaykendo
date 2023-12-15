@@ -35,7 +35,7 @@ export default function Classes() {
 
   return (
     <section>
-      <p className="text-sm text-secondary">Classes</p>
+      <p className="text-sm text-secondary font-semibold">Classes</p>
       <div className="grid mt-2 gap-6 md:grid-cols-3">
         {cardData.map((data) => {
           return (
@@ -49,7 +49,7 @@ export default function Classes() {
                   className="aspect-square object-contain"
                 />
                 <div className="flex flex-col pl-4 text-start">
-                  <p>{data.title}</p>
+                  <p className="text-lg font-medium">{data.title}</p>
                   <p className="text-sm text-default-500">Tuesday</p>
                   <p className="text-sm text-default-500">{data.time}</p>
                 </div>
@@ -63,7 +63,7 @@ export default function Classes() {
                   as={Link}
                   radius="sm"
                   size="md"
-                  className="text-white font-medium p-2 bg-primary shadow mx-auto"
+                  className="text-white font-medium bg-primary shadow mx-auto"
                 >
                   Learn more
                 </Button>

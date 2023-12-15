@@ -5,33 +5,39 @@ import NextImage from "next/image";
 export default function Location() {
   return (
     <section id="location">
-      <p className="text-sm text-secondary">Location</p>
-      <p className="text-xl">Federal Way Dojo</p>
-      <p className="text-sm">
-        Our dojo is located right off of Pacific Highway, near Celebration park
-        at the{" "}
-        <Link
-          href="https://itallhappenshere.org/"
-          className="underline text-black text-sm"
-        >
-          Federal Way Community Center.
-        </Link>{" "}
-        Our club has been meeting in the community center&apos;s multipurpose
-        rooms for the past couple years.
-      </p>
-      <NextImage
-        src="/location.jpg"
-        width={1000}
-        height={1000}
-        alt="An image of the main entrance of Federal Way Community Center"
-        className="mt-4 rounded-lg"
-      />
-      <Link
-        href="https://www.absherco.com/project/federal-way-community-center/"
-        className="text-black text-xs italic underline block"
-      >
-        Image source
-      </Link>
+      <p className="text-sm text-secondary font-semibold">Location</p>
+      <div className="flex flex-col lg:flex-row-reverse gap-4 mt-2">
+        <div className="lg:basis-2/5">
+          <p className="text-xl lg:text-2xl font-medium">Federal Way Dojo</p>
+          <p className="text-sm lg:text-base">
+            Our dojo is located right off of Pacific Highway, near Celebration
+            park at the{" "}
+            <Link
+              href="https://itallhappenshere.org/"
+              className="underline text-black text-sm"
+            >
+              Federal Way Community Center.
+            </Link>{" "}
+            Our club has been meeting in the community center&apos;s
+            multipurpose rooms for the past couple years.
+          </p>
+        </div>
+        <div>
+          <NextImage
+            src="/location.jpg"
+            width={1000}
+            height={1000}
+            alt="An image of the main entrance of Federal Way Community Center"
+            className="rounded-lg"
+          />
+          <Link
+            href="https://www.absherco.com/project/federal-way-community-center/"
+            className="text-black text-xs italic underline block"
+          >
+            Image source
+          </Link>
+        </div>
+      </div>
       <div className="flex justify-center">
         <Button
           href="https://maps.app.goo.gl/P5N9cpwbbk7Jvgvw9"

@@ -23,7 +23,7 @@ export default function FAQ() {
 
   return (
     <section className="py-16">
-      <p className="text-sm text-secondary font-medium">FAQs</p>
+      <p className="text-sm text-secondary font-semibold">FAQs</p>
       <Accordion variant="splitted" className="mt-2">
         {data.map((content, index) => (
           <AccordionItem
@@ -36,10 +36,10 @@ export default function FAQ() {
         ))}
       </Accordion>
       <div className="mt-8">
-        <p className="text-2xl text-center font-semibold">
+        <p className="text-xl lg:text-2xl font-semibold text-center">
           Still have questions?
         </p>
-        <p className="text-center">
+        <p className="text-sm lg:text-base text-center">
           View our full FAQ page or contact us with any further questions.
         </p>
         <div className="flex justify-center gap-8 mt-4">
@@ -49,7 +49,7 @@ export default function FAQ() {
             radius="sm"
             size="md"
             variant="light"
-            className="font-medium ring-2 ring-inset ring-primary text-primary"
+            className="font-medium ring-2 ring-inset ring-primary text-primary shadow"
           >
             FAQ
           </Button>
