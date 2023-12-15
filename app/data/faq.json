@@ -1,18 +1,51 @@
 [
   {
-    "header": "Starting Kendo",
+    "header": "General",
     "questions": [
       {
-        "question": "Can I join kendo if I am _____?",
-        "answer": "Anyone regardless of age, gender, or physical ability may start kendo."
+        "question": "When am I able to start kendo?",
+        "answer": "New student intake is during the first two weeks of every quarter. You may check our website or the parks department for starting dates. We typically start new quarters in January, March, June, and September."
       },
       {
-        "question": "Do I need any previous experience?",
-        "answer": "No previous experience in sports or any other martial arts is required for kendo, and is often preferred."
+        "question": "What age can my child start kendo?",
+        "answer": "Children may start as young as 7, but may start younger or older depending on the maturity of your child."
       },
       {
-        "question": "When can my child start kendo?",
-        "answer": "Children may start as young as 7, but this can depend on the maturity of your child."
+        "question": "Am I too old for kendo?",
+        "answer": "No one is too old to start kendo! We accept and work with all ages. Many kendo sensei practice until their late 80s."
+      },
+      {
+        "question": "Do I need previous (martial arts) experience before joining?",
+        "answer": "No. Previous experience is not required, and is often preferred."
+      },
+      {
+        "question": "Do I need to be fit to do kendo?",
+        "answer": "While being fit is beneficial, anyone regardless of physical ability may participate. The greatest physical qualities is often flexibility and endurance."
+      },
+      {
+        "question": "Can kendo keep me fit?",
+        "answer": "While kendo is great for general fitness, we typically do not develop an excessive amount of muscle mass or lose a significant amount of weight through practice. However, it is great for agility, endurance, toning and moderate muscle growth/strength."
+      },
+      {
+        "question": "Does kendo hurt?",
+        "answer": "Kendo is a full-contact martial art and can hurt. Bruises are not uncommon and can be caused from the shinai. We teach our students to learn to control the sword (shinai) before hitting the teachers or other students to minimize injuries."
+      },
+      {
+        "question": "Is kendo done barefoot?",
+        "answer": "Yes, kendo is done completely barefoot. This allows us to have better control and more contact with the floor."
+      },
+      {
+        "question": "Can I do a free trial of kendo?",
+        "answer": "No, we currently do not offer any free trials for kendo due to liability. All students must be registered in the class to participate. We always encourage prospective students to come observe the class, free of charge!"
+      }
+    ]
+  },
+  {
+    "header": "Beginning Kendo",
+    "questions": [
+      {
+        "question": "Do I need anything before my first class?",
+        "answer": "Nothing is needed before attending your first class. We provide swords (shinai) to all new students to purchase for $25. A shinai is the only required equipment for beginners."
       },
       {
         "question": "What should I wear to practice?",
@@ -24,11 +57,7 @@
       },
       {
         "question": "Should I do anything before starting kendo?",
-        "answer": "Kendo can be very aerobic and anaerobic. Cardio is always a great starter to help with your endurance."
-      },
-      {
-        "question": "Does kendo hurt?",
-        "answer": "Kendo is a full-contact martial art and can hurt. Bruises are not uncommon and can be caused from the shinai. We teach our students to learn to control the shinai and minimize injuries."
+        "answer": "Kendo can be very aerobic and anaerobic. Cardio is always a great starter to help with your endurance. You may also work on your leg flexibility."
       }
     ]
   },
@@ -36,12 +65,16 @@
     "header": "Experienced Kenshi",
     "questions": [
       {
+        "question": "Can I join practice if I am from another dojo?",
+        "answer": "Yes. Our local federation, PNKF, has an open door policy for all registered federation members. Please make sure to ask your sensei before contacting us about participating."
+      },
+      {
         "question": "Can I join practice if I have previous kendo experience?",
         "answer": "Yes! Please contact us so we can assess your skill level before you join our practices."
       },
       {
         "question": "Can I join practice if I am not from the local area?",
-        "answer": "Yes! Please contact us with details of your experience level before you join our practice."
+        "answer": "Yes! Please contact us with your name, dojo/federation, and rank before joining our practices."
       },
       {
         "question": "What other events can I participate in?",
@@ -57,20 +90,20 @@
     "header": "Cost",
     "questions": [
       {
-        "question": "How much do classes cost?",
-        "answer": "We go by a quarter system, where classes are priced by the parks program. A quarter typically costs $80-$90."
+        "question": "How much does kendo cost?",
+        "answer": "Classes are priced at around $10 per session by the parks department. Quarters can typically range from $100-$130."
       },
       {
-        "question": "How much does a shinai (sword) cost?",
+        "question": "How much does a sword (shinai) cost?",
         "answer": "Shinai may be purchased from us for $25. If you are just beginning kendo, this will be a one time purchase."
       },
       {
         "question": "How much does a uniform cost?",
-        "answer": "Keiko-gi and hakama can be bought together for about $90. A uniform is not required until a student finishes their second quarter."
+        "answer": "Keiko-gi and hakama can be bought together for about $100. A uniform is not required until a student finishes their second quarter."
       },
       {
-        "question": "How much does bogu (armor) cost?",
-        "answer": "A bogu set can typically cost $300-$400 for a beginning set. Bogu sets can be rented from the club which is recommended for at least the first year of advanced class."
+        "question": "How much does armor (bogu) cost?",
+        "answer": "An armor set can typically cost $300-$400 for a beginning set. Armor is not required until the student has demonstrated that they are ready for it, which usually takes 6 - 9 months."
       }
     ]
   },
@@ -92,7 +125,7 @@
     ]
   },
   {
-    "header": "Rank and Testing",
+    "header": "Grade Testing and Tournaments",
     "questions": [
       {
         "question": "When can I receive rank?",
@@ -101,12 +134,7 @@
       {
         "question": "How does the ranking system work?",
         "answer": "Ranks are divided into two categories, white belt and black belt. White belt has six degrees which go from 6 kyu - 1 kyu, with 1 kyu being the highest. Black belt has eight degrees and are vice versa from white belt, which go from 1 dan - 8 dan."
-      }
-    ]
-  },
-  {
-    "header": "Tournament",
-    "questions": [
+      },
       {
         "question": "When can we participate in tournaments?",
         "answer": "Depending on your progress, you may be able to attend your first tournament between 9 months - 1 year after starting."

@@ -61,7 +61,7 @@ export default function Nav() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/about">
             About
@@ -79,13 +79,13 @@ export default function Nav() {
           href="/register"
           as={Link}
           radius="sm"
-          className="font-medium text-white bg-primary max-sm:hidden"
+          className="font-medium text-white bg-primary max-lg:hidden"
         >
           Join
         </Button>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="lg:hidden"
         />
       </NavbarContent>
 

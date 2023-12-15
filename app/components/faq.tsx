@@ -4,7 +4,7 @@ import { Accordion, AccordionItem, Link, Button } from "@nextui-org/react";
 export default function FAQ() {
   const data = [
     {
-      title: "When can I join kendo?",
+      title: "When am I able to start kendo?",
       body: "New student intake is during the first two weeks of every quarter. You may check our website or the parks department for starting dates. We typically start new quarters in January, March, June, and September.",
     },
     {
