@@ -1,12 +1,6 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Image,
-  Chip,
-  Link,
-} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Chip, Link } from "@nextui-org/react";
 import clsx from "clsx";
+import NextImage from "next/image";
 import { PostMetadata } from "@/app/lib/post-meta-data";
 
 export default function PostPreview(props: PostMetadata) {
@@ -14,11 +8,12 @@ export default function PostPreview(props: PostMetadata) {
     <Link href={`/news/${props.slug}`}>
       <Card className="max-w-sm">
         <CardHeader>
-          <Image
+          <NextImage
             src={`/news/` + props.preview}
             alt="placeholder"
             width={300}
-            radius="sm"
+            height={0}
+            className="rounded-md"
           />
         </CardHeader>
         <CardBody>

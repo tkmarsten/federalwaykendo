@@ -15,7 +15,7 @@ export default function Terms() {
   return (
     <main>
       <p className="text-4xl place-self-center font-semibold text-center">
-        Frequently Asked Questions
+        Terminology
       </p>
       <Accordion>
         {data.map((group, index) => (
