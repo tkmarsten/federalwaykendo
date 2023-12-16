@@ -6,7 +6,7 @@ import Register from "@/app/components/register";
 
 export default function Home() {
   return (
-    <main className="space-y-16">
+    <main className="space-y-16 max-lg:my-8 mb-16">
       <Header />
       <Location />
       <Classes />

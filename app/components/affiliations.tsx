@@ -1,5 +1,5 @@
 import NextImage from "next/image";
-import { Link } from "@nextui-org/react";
+import { Link, Divider } from "@nextui-org/react";
 
 export default function Affiliations() {
   const data = [
@@ -13,12 +13,16 @@ export default function Affiliations() {
   ];
 
   return (
-    <div className="flex justify-around p-4">
-      {data.map((image, index) => (
-        <Link key={index} href={image.url} isExternal>
-          <NextImage width={50} height={50} src={image.src} alt={image.alt} />
-        </Link>
-      ))}
-    </div>
+    <section className="col-span-full">
+      <p className="text-sm text-secondary font-semibold">Affiliations</p>
+      <Divider />
+      <div className="flex justify-around p-4">
+        {data.map((image, index) => (
+          <Link key={index} href={image.url} isExternal>
+            <NextImage width={50} height={50} src={image.src} alt={image.alt} />
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }

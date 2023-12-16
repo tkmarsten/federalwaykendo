@@ -8,8 +8,6 @@ export default function News() {
   ));
 
   return (
-    <main className="my-16 flex flex-col items-center gap-4">
-      {postPreviews}
-    </main>
+    <main className="flex flex-col items-center gap-4">{postPreviews}</main>
   );
 }

@@ -1,10 +1,11 @@
 import { Button, Link, Divider } from "@nextui-org/react";
 import NextImage from "next/image";
+import Affiliations from "@/app/components/affiliations";
 
 export default function Header() {
   return (
-    <header className="min-h-[calc(100vh-64px)] grid md:grid-cols-2 gap-8 items-center max-md:mt-8">
-      <div className="flex flex-col space-y-4 justify-center md:col-span-1 lg:p-4">
+    <header className="min-h-[calc(100vh-64px)] grid md:grid-cols-2 gap-8 items-center">
+      <div className="flex flex-col space-y-4 md:col-span-1 lg:p-4">
         <p className="text-4xl lg:text-6xl leading-tight font-bold">
           Start your kendo journey here
         </p>

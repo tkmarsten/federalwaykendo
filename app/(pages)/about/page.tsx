@@ -4,7 +4,7 @@ import SenseiTable from "@/app/components/sensei-table";
 
 export default function About() {
   return (
-    <main className="space-y-8 mt-16">
+    <main className="space-y-8">
       <div className="flex flex-col lg:flex-row-reverse items-center">
         <div className="flex-1">
           <NextImage
