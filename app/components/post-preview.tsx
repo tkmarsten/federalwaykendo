@@ -6,6 +6,7 @@ import {
   Chip,
   Link,
 } from "@nextui-org/react";
+import clsx from "clsx";
 import { PostMetadata } from "@/app/lib/post-meta-data";
 
 export default function PostPreview(props: PostMetadata) {
@@ -18,7 +19,6 @@ export default function PostPreview(props: PostMetadata) {
             alt="placeholder"
             width={300}
             radius="sm"
-            fallbackSrc="https://placehold.co/300x200"
           />
         </CardHeader>
         <CardBody>

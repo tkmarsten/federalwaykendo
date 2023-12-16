@@ -1,5 +1,5 @@
 import fs from "fs";
-import { Image, Link } from "@nextui-org/react";
+import { Image, Link, Divider } from "@nextui-org/react";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/app/lib/get-post-metadata";
@@ -25,7 +25,6 @@ export default function Post({ params }: { params: { slug: string } }) {
           alt="Preview image of the news post"
           width={450}
           radius="sm"
-          fallbackSrc="https://placehold.co/450"
         />
       </header>
       <article className="prose lg:prose-xl max-w-screen-md mx-auto">
