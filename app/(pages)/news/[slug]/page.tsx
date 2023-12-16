@@ -3,7 +3,7 @@ import { Image, Link } from "@nextui-org/react";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/app/lib/get-post-metadata";
-import { FiArrowLeft } from "react-icons/fi";
+import { FaArrowLeft } from "react-icons/fa6";
 
 export default function Post({ params }: { params: { slug: string } }) {
   const slug = params.slug;
@@ -12,7 +12,7 @@ export default function Post({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen max-w-screen-xl mt-16 mx-auto">
       <Link href="/news">
-        <FiArrowLeft />
+        <FaArrowLeft />
         All News
       </Link>
       <header className="flex flex-col lg:flex-row justify-between gap-4">

@@ -20,7 +20,12 @@ import {
   AccordionItem,
 } from "@nextui-org/react";
 import NextImage from "next/image";
-import { FaFilePen, FaCircleQuestion, FaCircleInfo } from "react-icons/fa6";
+import {
+  FaFilePen,
+  FaCircleQuestion,
+  FaCircleInfo,
+  FaNewspaper,
+} from "react-icons/fa6";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +33,10 @@ export default function Nav() {
   const menuItems = [
     {
       category: "Club",
-      links: [{ text: "About", link: "/about", icon: <FaCircleInfo /> }],
+      links: [
+        { text: "About", link: "/about", icon: <FaCircleInfo /> },
+        { text: "News", link: "/news", icon: <FaNewspaper /> },
+      ],
     },
     {
       category: "Class",
@@ -65,6 +73,11 @@ export default function Nav() {
         <NavbarItem>
           <Link color="foreground" href="/about">
             About
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/news">
+            News
           </Link>
         </NavbarItem>
         <NavbarItem>
