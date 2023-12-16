@@ -15,6 +15,7 @@ export default function getPostMetadata(): PostMetadata[] {
       date: matterResult.data.date,
       location: matterResult.data.location,
       tag: matterResult.data.tag,
+      preview: matterResult.data.preview,
       slug: fileName.replace(".md", ""),
     };
   });

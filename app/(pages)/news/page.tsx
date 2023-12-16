@@ -7,5 +7,9 @@ export default function News() {
     <PostPreview key={post.slug} {...post} />
   ));
 
-  return <main>{postPreviews}</main>;
+  return (
+    <main className="my-16 flex flex-col items-center gap-4">
+      {postPreviews}
+    </main>
+  );
 }

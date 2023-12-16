@@ -14,9 +14,11 @@ export default function PostPreview(props: PostMetadata) {
       <Card className="max-w-sm">
         <CardHeader>
           <Image
-            src="https://via.placeholder.com/350x150"
+            src={`/news/` + props.preview}
             alt="placeholder"
-            width={400}
+            width={300}
+            radius="sm"
+            fallbackSrc="https://placehold.co/300x200"
           />
         </CardHeader>
         <CardBody>
