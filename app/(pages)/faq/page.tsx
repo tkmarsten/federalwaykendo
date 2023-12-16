@@ -4,7 +4,7 @@ import { Accordion, AccordionItem, Divider } from "@nextui-org/react";
 
 export default function FAQ() {
   return (
-    <main className="mt-16">
+    <main>
       <div className="flex flex-col md:flex-row justify-center gap-6">
         <p className="text-4xl font-semibold p-2 border-2 rounded-md border-black break-keep place-self-center">
           剣道

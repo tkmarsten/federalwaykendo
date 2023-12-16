@@ -1,6 +1,5 @@
 import { Button, Link, Divider } from "@nextui-org/react";
 import NextImage from "next/image";
-import Affiliations from "@/app/components/affiliations";
 
 export default function Header() {
   return (
