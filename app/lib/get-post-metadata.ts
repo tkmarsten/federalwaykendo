@@ -10,12 +10,14 @@ export default function getPostMetadata(): PostMetadata[] {
   const posts = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
     const matterResult = matter(fileContents);
+
     return {
       title: matterResult.data.title,
       date: matterResult.data.date,
       location: matterResult.data.location,
       tag: matterResult.data.tag,
       preview: matterResult.data.preview,
+      unix: Date.parse(matterResult.data.date),
       slug: fileName.replace(".md", ""),
     };
   });

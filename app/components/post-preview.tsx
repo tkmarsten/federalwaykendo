@@ -6,14 +6,13 @@ import { PostMetadata } from "@/app/lib/post-meta-data";
 export default function PostPreview(props: PostMetadata) {
   return (
     <Link href={`/news/${props.slug}`}>
-      <Card className="max-w-sm">
-        <CardHeader>
+      <Card className="max-w-sm rounded-xl">
+        <CardHeader className="relative w-[300px] h-[200px] m-2">
           <NextImage
             src={`/news/` + props.preview}
             alt="placeholder"
-            width={300}
-            height={0}
-            className="rounded-md"
+            fill
+            className="rounded-[4px] object-cover"
           />
         </CardHeader>
         <CardBody>

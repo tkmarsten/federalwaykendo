@@ -4,5 +4,6 @@ export interface PostMetadata {
   location: string,
   tag: string,
   preview: string,
+  unix: number,
   slug: string
 }
