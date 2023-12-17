@@ -1,4 +1,4 @@
-export default function Curriculum() {
+export default function Page() {
   return (
     <main>
       <p className="text-4xl place-self-center font-semibold text-center">

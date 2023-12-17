@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import getPostMetadata from "@/app/lib/get-post-metadata";
 import { FaArrowLeft } from "react-icons/fa6";
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug;
   const post = getPostContent(slug);
 

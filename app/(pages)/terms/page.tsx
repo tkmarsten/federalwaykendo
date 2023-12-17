@@ -11,7 +11,7 @@ import {
 } from "@nextui-org/react";
 import data from "@/app/data/terms.json";
 
-export default function Terms() {
+export default function Page() {
   return (
     <main>
       <p className="text-4xl place-self-center font-semibold text-center">

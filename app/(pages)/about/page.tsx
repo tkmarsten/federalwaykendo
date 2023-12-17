@@ -2,7 +2,7 @@
 import NextImage from "next/image";
 import SenseiTable from "@/app/components/sensei-table";
 
-export default function About() {
+export default function Page() {
   return (
     <main className="space-y-8">
       <div className="flex flex-col lg:flex-row-reverse items-center">

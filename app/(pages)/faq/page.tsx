@@ -2,7 +2,7 @@
 import data from "@/app/data/faq.json";
 import { Accordion, AccordionItem, Divider } from "@nextui-org/react";
 
-export default function FAQ() {
+export default function Page() {
   return (
     <main>
       <div className="flex flex-col md:flex-row justify-center gap-6">

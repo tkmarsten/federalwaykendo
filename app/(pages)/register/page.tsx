@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Register",
 };
 
-export default function Register() {
+export default function Page() {
   const data = [
     {
       src: "beginning",
