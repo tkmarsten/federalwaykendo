@@ -21,11 +21,12 @@ import {
 } from "@nextui-org/react";
 import NextImage from "next/image";
 import {
-  FaFilePen,
   FaCircleQuestion,
   FaCircleInfo,
   FaNewspaper,
+  FaPersonRunning,
 } from "react-icons/fa6";
+import { SiGooglecalendar } from "react-icons/si";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,11 +41,25 @@ export default function Nav() {
     },
     {
       category: "Class",
-      links: [{ text: "Register", link: "/register", icon: <FaFilePen /> }],
+      links: [],
     },
     {
       category: "Resources",
-      links: [{ text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> }],
+      links: [
+        { text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> },
+        {
+          text: "Calendar",
+          link: "https://calendar.google.com/calendar/u/1?cid=ZmVkZXJhbHdheWtlbmRvY2x1YkBnbWFpbC5jb20",
+          icon: <SiGooglecalendar />,
+          isExternal: true,
+        },
+        {
+          text: "Warmup",
+          link: "https://youtu.be/cpidZRL5ZbI",
+          icon: <FaPersonRunning />,
+          isExternal: true,
+        },
+      ],
     },
   ];
 
@@ -70,21 +85,37 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="/about">
-            About
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/news">
-            News
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/faq">
-            FAQ
-          </Link>
-        </NavbarItem>
+        {menuItems.map((item) => (
+          <NavbarItem key={item.category}>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button variant="light">{item.category}</Button>
+              </DropdownTrigger>
+              <DropdownMenu>
+                {item.links.map((link) => (
+                  <DropdownItem key={link.text}>
+                    <Button
+                      as={Link}
+                      href={link.link}
+                      startContent={link.icon}
+                      variant="light"
+                      size="lg"
+                      isExternal={link.isExternal}
+                      className={clsx(
+                        "text-foreground-500 w-full justify-start px-2",
+                        {
+                          "text-green-500": pathname === link.link,
+                        }
+                      )}
+                    >
+                      {link.text}
+                    </Button>
+                  </DropdownItem>
+                ))}
+              </DropdownMenu>
+            </Dropdown>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarContent justify="end">
@@ -92,9 +123,9 @@ export default function Nav() {
           href="/register"
           as={Link}
           radius="sm"
-          className="font-medium text-white bg-primary max-lg:hidden"
+          className="font-medium text-background bg-neutral-800 max-lg:hidden"
         >
-          Join
+          Sign Up
         </Button>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -118,6 +149,7 @@ export default function Nav() {
                     startContent={link.icon}
                     variant="light"
                     size="lg"
+                    isExternal={link.isExternal}
                     className={clsx(
                       "text-foreground-500 w-full justify-start px-2",
                       {
@@ -132,6 +164,16 @@ export default function Nav() {
             </AccordionItem>
           ))}
         </Accordion>
+        <NavbarMenuItem className="mt-4">
+          <Button
+            href="/register"
+            as={Link}
+            radius="sm"
+            className="font-medium text-background bg-neutral-800 w-full"
+          >
+            Sign Up
+          </Button>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
