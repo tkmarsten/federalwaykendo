@@ -10,7 +10,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const post = getPostContent(slug);
 
   return (
-    <main className="min-h-screen max-w-screen-xl mt-16 mx-auto">
+    <main className="min-h-screen max-w-screen-xl mx-auto">
       <Link href="/news">
         <FaArrowLeft />
         All News

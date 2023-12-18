@@ -8,6 +8,8 @@ export default function Page() {
   ));
 
   return (
-    <main className="flex flex-col items-center gap-4">{postPreviews}</main>
+    <main className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
+      {postPreviews}
+    </main>
   );
 }
