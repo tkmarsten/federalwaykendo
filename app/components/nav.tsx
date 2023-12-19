@@ -25,6 +25,7 @@ import {
   FaCircleInfo,
   FaNewspaper,
   FaPersonRunning,
+  FaBook,
 } from "react-icons/fa6";
 import { SiGooglecalendar } from "react-icons/si";
 
@@ -41,7 +42,7 @@ export default function Nav() {
     },
     {
       category: "Class",
-      links: [],
+      links: [{ text: "Curriculum", link: "/curriculum", icon: <FaBook /> }],
     },
     {
       category: "Resources",
