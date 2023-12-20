@@ -6,10 +6,10 @@ import Register from "@/app/components/register";
 
 export default function Page() {
   return (
-    <main className="space-y-16 max-lg:my-8 mb-16">
+    <main className="space-y-16 lg:space-y-32 max-lg:my-8 mb-16">
       <Header />
-      <Location />
       <Classes />
+      <Location />
       <FAQ />
       <Register />
     </main>

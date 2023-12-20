@@ -1,17 +1,16 @@
-import { Button, Link, Divider } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import NextImage from "next/image";
-import Affiliations from "@/app/components/affiliations";
 
 export default function Header() {
   return (
-    <header className="min-h-[calc(100vh-64px)] grid md:grid-cols-2 gap-8 items-center">
-      <div className="flex flex-col space-y-4 md:col-span-1 lg:p-4">
+    <header className="min-h-[calc(100vh-64px)] mt-8 lg:mt-16 space-y-8 lg:space-y-16">
+      <div className="max-w-screen-sm text-center mx-auto space-y-4">
         <p className="text-4xl lg:text-6xl leading-tight font-bold">
-          Start your kendo journey here
+          Start Your Kendo Journey Here
         </p>
         <p>
-          Learn and practice physical and mental discipline through the
-          traditional Japanese martial art of kendo, the way of the sword.
+          Learn the traditional Japanese martial art of kendo, the way of the
+          sword.
         </p>
         <div>
           <Button
@@ -33,7 +32,7 @@ export default function Header() {
           </Button>
         </div>
       </div>
-      <div className="md:col-span-1 relative w-full h-80 lg:h-3/5">
+      <div className="relative w-full h-[75vh]">
         <NextImage
           src="/header.jpg"
           alt="Picture of kendo"
