@@ -52,14 +52,15 @@ export default function Classes() {
               height={80}
               className="aspect-square object-contain"
             />
-            <p className="text-lg font-medium">{data.title}</p>
+            <p className="text-xl font-medium">{data.title}</p>
             <p className="text-sm text-default-500">Tuesday</p>
             <p className="text-sm text-default-500">{data.time}</p>
-            <p className="text-sm">{data.body}</p>
+            <p className="mt-2">{data.body}</p>
             <Button
               as={Link}
               href={data.link}
               variant="light"
+              size="lg"
               disableAnimation
               endContent={<FaArrowRight />}
               className="p-0 text-primary justify-start mt-auto"

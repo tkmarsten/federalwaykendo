@@ -1,6 +1,7 @@
 "use client";
 import NextImage from "next/image";
 import SenseiTable from "@/app/components/sensei-table";
+import dojoData from "@/app/data/dojo.json";
 
 export default function Page() {
   return (
@@ -15,7 +16,9 @@ export default function Page() {
             className="m-auto"
           />
         </div>
-        <p className="text-5xl text-center flex-1">Federal Way Kendo Club</p>
+        <p className="text-5xl text-center flex-1">
+          {dojoData.name} Kendo Club
+        </p>
       </div>
       <section>
         <p className="text-sm text-secondary font-semibold">About Us</p>

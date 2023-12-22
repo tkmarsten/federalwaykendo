@@ -1,6 +1,7 @@
 import { Link, Button } from "@nextui-org/react";
 import { SiGooglemaps } from "react-icons/si";
 import NextImage from "next/image";
+import dojoData from "@/app/data/dojo.json";
 
 export default function Location() {
   return (
@@ -8,13 +9,14 @@ export default function Location() {
       <p className="text-sm text-secondary font-semibold">Location</p>
       <div className="flex flex-col lg:flex-row-reverse gap-4 mt-2">
         <div className="lg:basis-2/5">
-          <p className="text-xl lg:text-2xl font-medium">Federal Way Dojo</p>
+          <p className="text-xl lg:text-2xl font-medium">{`${dojoData.name} Dojo`}</p>
           <p className="text-sm lg:text-base">
             Our dojo is located right off of Pacific Highway, near Celebration
             park at the{" "}
             <Link
-              href="https://itallhappenshere.org/"
+              href={dojoData.facilityWebsite}
               className="underline text-black text-sm"
+              isExternal
             >
               Federal Way Community Center.
             </Link>{" "}
@@ -40,7 +42,7 @@ export default function Location() {
       </div>
       <div className="flex justify-center">
         <Button
-          href="https://maps.app.goo.gl/P5N9cpwbbk7Jvgvw9"
+          href={dojoData.maps}
           as={Link}
           isExternal
           radius="sm"
