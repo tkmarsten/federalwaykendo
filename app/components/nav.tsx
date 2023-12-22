@@ -28,6 +28,7 @@ import {
   FaBook,
 } from "react-icons/fa6";
 import { SiGooglecalendar } from "react-icons/si";
+import dojoData from "@/app/data/dojo.json";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Nav() {
         { text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> },
         {
           text: "Calendar",
-          link: "https://calendar.google.com/calendar/u/1?cid=ZmVkZXJhbHdheWtlbmRvY2x1YkBnbWFpbC5jb20",
+          link: dojoData.calendar,
           icon: <SiGooglecalendar />,
           isExternal: true,
         },
@@ -78,9 +79,9 @@ export default function Nav() {
               src="/logo.png"
               width={45}
               height={45}
-              alt="Federal Way Kendo logo"
+              alt={`${dojoData.name} logo`}
             />
-            <p className="px-2">Federal Way Kendo</p>
+            <p className="px-2">{`${dojoData.name} Kendo`}</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>

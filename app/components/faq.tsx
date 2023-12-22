@@ -1,5 +1,6 @@
 "use client";
 import { Accordion, AccordionItem, Link, Button } from "@nextui-org/react";
+import dojoData from "@/app/data/dojo.json";
 
 export default function FAQ() {
   const data = [
@@ -55,7 +56,7 @@ export default function FAQ() {
           </Button>
           <Button
             as={Link}
-            href="mailto:federalwaykendoclub@gmail.com"
+            href={`mailto:${dojoData.email}`}
             radius="sm"
             size="md"
             className="text-white font-medium bg-primary shadow"
