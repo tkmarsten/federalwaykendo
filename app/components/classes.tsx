@@ -7,28 +7,28 @@ export default function Classes() {
     {
       image: "beginning",
       title: "Beginning",
-      link: "#",
+      link: "/curriculum#beginning",
       time: "6:15-7pm",
       body: "Learn the basic etiquette, manners, and foundations of kendo.",
     },
     {
       image: "continuing",
       title: "Continuing",
-      link: "#",
+      link: "/curriculum#continuing",
       time: "6:15-7pm",
       body: "Build upon what you have learned from the beginning quarter, combining techniques and applying them further.",
     },
     {
       image: "advanced",
       title: "Advanced",
-      link: "#",
+      link: "/curriculum#advanced",
       time: "7-8:30pm",
       body: "Utilize advanced techniques in real scenarios such as sparring, tournaments, and grade testings.",
     },
   ];
 
   return (
-    <section>
+    <section id="scrollto">
       <p className="text-sm text-secondary font-semibold">Classes</p>
       <div className="flex flex-col lg:flex-row gap-4">
         <p className="text-3xl font-semibold basis-1/2">

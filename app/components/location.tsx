@@ -5,7 +5,7 @@ import dojoData from "@/app/data/dojo.json";
 
 export default function Location() {
   return (
-    <section id="location">
+    <section>
       <p className="text-sm text-secondary font-semibold">Location</p>
       <div className="flex flex-col lg:flex-row-reverse gap-4 mt-2">
         <div className="lg:basis-2/5">
