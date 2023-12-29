@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardBody, Chip, Link } from "@nextui-org/react";
 import NextImage from "next/image";
-import { PostMetadata } from "@/app/lib/post-meta-data";
+import { PostMetadata } from "@/app/lib/post-metadata";
 
 export default function PostPreview(props: PostMetadata) {
   return (
