@@ -7,13 +7,13 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-800 text-white py-10">
       <div className="max-w-screen-xl m-auto px-6">
-        <div className="space-y-4 text-sm">
-          <div className="basis-1/2">
+        <div className="space-y-4 text-sm flex flex-col lg:flex-row">
+          <div className="lg:basis-1/2">
             <p className="text-secondary">Location</p>
             <p>{dojoData.facilityName}</p>
             <p>{dojoData.address}</p>
           </div>
-          <div className="basis-1/2">
+          <div className="lg:basis-1/2">
             <p className="text-secondary">Practice Hours</p>
             <p className="font-semibold">Tuesday</p>
             <p>Beginning 6:15-7pm</p>
@@ -45,7 +45,7 @@ export default function Footer() {
             height={50}
           />
         </div>
-        <p className="text-center">&copy; 2023 {dojoData.name} Kendo Club</p>
+        <p className="text-center">&copy; 2024 {dojoData.name} Kendo Club</p>
       </div>
     </footer>
   );
