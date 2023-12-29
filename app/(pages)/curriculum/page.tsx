@@ -1,27 +1,24 @@
 import { Link } from "@nextui-org/react";
+import Timeline from "@/app/components/timeline";
 
 export default function Page() {
   return (
     <main>
-      <p className="text-4xl place-self-center font-semibold text-center">
+      <p className="text-4xl place-self-center font-semibold text-center mb-16">
         Class Curriculum
       </p>
-      <div className="flex flex-row justify-around">
-        <Link href="#beginning">Beginning</Link>
-        <Link>Continuing</Link>
-        <Link>Advanced</Link>
-      </div>
-      <section className="grid lg:grid-cols-3">
+      <section className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
-          <p>About Our Classes</p>
+          <p className="text-2xl mb-4">About Our Classes</p>
           <p>
             Here at Federal Way Kendo Club, we provide a comprehensive class to
             create strong foundations for our students, while also challenging
             them. Our classes focus on learning the basics of kendo and
             emphasizing those basics that allow students to progress at a more
             steady pace when they become more experienced.
-            <br />
-            <br />
+          </p>
+          <br />
+          <p>
             All new students start in the beginning class and work their way up
             to the advanced class after demonstrating they possess the
             neccessary skill. From your first quarter to the advanced class,
@@ -32,11 +29,11 @@ export default function Page() {
             their needs.
           </p>
         </div>
-        <div></div>
+        <Timeline />
       </section>
 
       <section id="beginning">
-        <p>Beginning (1-3 Months)*</p>
+        <p>Beginning</p>
         <div>
           <p>Concepts</p>
           <p>Strikes</p>
@@ -73,8 +70,8 @@ export default function Page() {
           <li>Fast head strike (haya-suburi)</li>
         </ul>
       </section>
-      <section>
-        <p>Intermediate (4-6 Months)*</p>
+      <section id="continuing">
+        <p>Intermediate</p>
         <ul>
           <li>All previous things learned</li>
         </ul>
@@ -99,8 +96,8 @@ export default function Page() {
           <li>Preperation for uniform and armor</li>
         </ul>
       </section>
-      <section>
-        <p>Advanced (7+ Months)</p>
+      <section id="advanced">
+        <p>Advanced</p>
         <ul>
           <li>All previous things learned</li>
         </ul>

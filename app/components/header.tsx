@@ -14,7 +14,7 @@ export default function Header() {
         </p>
         <div>
           <Button
-            href="#location"
+            href="#scrollto"
             as={Link}
             radius="sm"
             className="mr-4 font-medium text-white bg-primary shadow"

@@ -26,6 +26,7 @@ import {
   FaNewspaper,
   FaPersonRunning,
   FaBook,
+  FaBookAtlas,
 } from "react-icons/fa6";
 import { SiGooglecalendar } from "react-icons/si";
 import dojoData from "@/app/data/dojo.json";
@@ -49,6 +50,7 @@ export default function Nav() {
       category: "Resources",
       links: [
         { text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> },
+        { text: "Terminology", link: "/terms", icon: <FaBookAtlas /> },
         {
           text: "Calendar",
           link: dojoData.calendar,
