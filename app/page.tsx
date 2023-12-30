@@ -1,8 +1,10 @@
-import Header from "@/app/components/header";
-import Location from "@/app/components/location";
-import Classes from "@/app/components/classes";
-import FAQ from "@/app/components/faq";
-import Register from "@/app/components/register";
+import {
+  Header,
+  Classes,
+  Location,
+  Register,
+  FAQ,
+} from "@/app/components/home";
 
 export default function Page() {
   return (
