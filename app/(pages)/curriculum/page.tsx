@@ -8,8 +8,8 @@ export default function Page() {
         Class Curriculum
       </p>
       <section className="grid lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
-          <p className="text-2xl mb-4">About Our Classes</p>
+        <div className="lg:col-span-2 max-w-2xl">
+          <p className="text-2xl font-semibold mb-4">About Our Classes</p>
           <p>
             Here at Federal Way Kendo Club, we provide a comprehensive class to
             create strong foundations for our students, while also challenging
@@ -32,87 +32,100 @@ export default function Page() {
         <Timeline />
       </section>
 
-      <section id="beginning">
-        <p>Beginning</p>
-        <div>
-          <p>Concepts</p>
-          <p>Strikes</p>
-          <p>Equipment</p>
-        </div>
-        <ul>
-          <li>Concepts</li>
-          <li>Using your spirit (kiai)</li>
-          <li>Posture</li>
-        </ul>
-        <ul>
-          <li>Etiquette (rei-ho)</li>
-          <li>Bowing (rei)</li>
-          <li>Meditation (moku-sou)</li>
-        </ul>
-        <ul>
-          <li>Stances</li>
-          <li>Neutral standing position (shi-zen-tai)</li>
-          <li>Silent sitting (seiza)</li>
-          <li>Crouched position (son-kyo)</li>
-        </ul>
-        <ul>
-          <li>Footwork (ashi-sabaki)</li>
-          <li>One step (okuri-ashi)</li>
-          <li>Continuous steps (renzoku-okuri-ashi)</li>
-          <li>Attack step (fumi-komi)</li>
-        </ul>
-        <ul>
-          <li>Basic swings / strikes (suburi)</li>
-          <li>Top to bottom swing (jyouge-buri)</li>
-          <li>Head strike (men)</li>
-          <li>Wrist strike (kote)</li>
-          <li>Head and wrist strike (kote-men)</li>
-          <li>Fast head strike (haya-suburi)</li>
-        </ul>
-      </section>
-      <section id="continuing">
-        <p>Intermediate</p>
-        <ul>
-          <li>All previous things learned</li>
-        </ul>
-        <ul>
-          <li>Swings / strikes (suburi)</li>
-          <li>Diagonal swing (naname-buri)</li>
-          <li>Diagonal head strike (sayu-men)</li>
-          <li>Torso strike (dou)</li>
-          <li>Backwards head strike (hiki-men)</li>
-        </ul>
-        <ul>
-          <li>Drills</li>
-          <li>Kiri-kaeshi</li>
-          <li>Men</li>
-          <li>Kote</li>
-          <li>Dou</li>
-          <li>Hiki-men</li>
-        </ul>
-        <ul>
-          <li>Warmups</li>
-          <li>Receiving with shinai</li>
-          <li>Preperation for uniform and armor</li>
-        </ul>
-      </section>
-      <section id="advanced">
-        <p>Advanced</p>
-        <ul>
-          <li>All previous things learned</li>
-        </ul>
-        <ul>
-          <li>Hitting and receiving in armor</li>
-        </ul>
-        <ul>
-          <li>Advanced techniques (waza)</li>
-          <li>Open hit practice (kakari-geiko)</li>
-          <li>Sparring practice (ji-geiko)</li>
-        </ul>
-        <ul>
-          <li>Preparation for grade tests and tournaments</li>
-        </ul>
-      </section>
+      <div className="space-y-8 mt-16">
+        <section id="beginning" className="bg-zinc-300 rounded-xl p-4">
+          <p className="text-2xl font-semibold">Beginning</p>
+          <div className="grid lg:grid-cols-3">
+            <div>
+              <p className="font-medium">Concepts</p>
+              <ul>
+                <li>Etiquette (rei-ho)</li>
+                <li>Manners (rei-gi)</li>
+                <li>Bowing</li>
+                <li>Holding the shinai</li>
+                <li>Stances</li>
+                <li>Strikes</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Drills / Exercises</p>
+              <ul>
+                <li>One step (okuri-ashi)</li>
+                <li>Continuous steps (renzoku okuri-ashi)</li>
+                <li>Full range swing (jouge-buri)</li>
+                <li>Head strike (men)</li>
+                <li>Wrist strike (kote)</li>
+                <li>Continuous strikes (kote-men)</li>
+                <li>Attack step (fumi-komi)</li>
+                <li>Fast swing (haya-suburi)</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Equipment</p>
+              <ul>
+                <li>Shinai</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="continuing" className="bg-zinc-300 rounded-xl p-4">
+          <p className="text-2xl font-semibold">Intermediate</p>
+          <div className="grid lg:grid-cols-3">
+            <div>
+              <p className="font-medium">Concepts</p>
+              <ul>
+                <li>Hitting / receiving with shinai</li>
+                <li>Preparing to wear uniform / armor</li>
+                <li>Warmups</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Drills / Exercises</p>
+              <ul>
+                <li>Diagonal swing (naname-buri)</li>
+                <li>Diagonal head strike (sayu-men)</li>
+                <li>Kiri-kaeshi</li>
+                <li>Torso strike (dou)</li>
+                <li>Backwards head strike (hiki-men)</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Equipment</p>
+              <ul>
+                <li>Keiko-gi</li>
+                <li>Hakama</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="advanced" className="bg-zinc-300 rounded-xl p-4">
+          <p className="text-2xl font-semibold">Advanced</p>
+          <div className="grid lg:grid-cols-3">
+            <div>
+              <p className="font-medium">Concepts</p>
+              <ul>
+                <li>Sparring</li>
+                <li>Waza</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Drills / Exercises</p>
+              <ul>
+                <li>Kakari-geiko</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium">Equipment</p>
+              <ul>
+                <li>Bokken / bokuto</li>
+                <li>Armor</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
