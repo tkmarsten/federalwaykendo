@@ -17,20 +17,23 @@ export default function SenseiTable() {
   return (
     <section className="space-y-8 mt-8">
       {data.map((sensei, index) => (
-        <div key={index} className="flex flex-col gap-4">
+        <div
+          key={index}
+          className="grid lg:grid-cols-4 outline outline-slate-300 p-4 gap-4 lg:gap-0"
+        >
           <div className="flex flex-col items-center">
             <Image
-              src="#"
-              width={150}
-              height={150}
-              fallbackSrc="https://via.placeholder.com/150x150"
+              src={`/${sensei.image}`}
+              width={200}
+              height={200}
+              fallbackSrc="https://via.placeholder.com/200x200"
               alt="Sensei"
             />
             <p className="text-lg">{sensei.name}</p>
             <p className="text-sm text-default-500">{sensei.rank}</p>
             <p className="text-sm text-default-500">{sensei.title}</p>
           </div>
-          <div>
+          <div className="lg:col-span-3">
             <Tabs aria-label="tabs" size="sm" className="flex">
               <Tab title="Instruction">
                 <Table removeWrapper layout="fixed">
@@ -67,7 +70,9 @@ export default function SenseiTable() {
                     <TableColumn className="hidden lg:table-cell">
                       Division
                     </TableColumn>
-                    <TableColumn>Tournament</TableColumn>
+                    <TableColumn className="hidden lg:table-cell">
+                      Tournament
+                    </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
                   <TableBody>
@@ -75,17 +80,18 @@ export default function SenseiTable() {
                       <TableRow key={index}>
                         <TableCell className="font-medium">
                           {row.place}
+                          <span className="lg:hidden"> - {row.division}</span>
                           <dl className="lg:hidden font-normal">
-                            <dt className="sr-only">Dojo</dt>
-                            <dd className="text-gray-500 mt-1">
-                              {row.division}
-                            </dd>
+                            <dt className="sr-only">Placement</dt>
+                            <dd className="text-gray-500 mt-1">{row.taikai}</dd>
                           </dl>
                         </TableCell>
                         <TableCell className="hidden lg:table-cell">
                           {row.division}
                         </TableCell>
-                        <TableCell>{row.taikai}</TableCell>
+                        <TableCell className="hidden lg:table-cell">
+                          {row.taikai}
+                        </TableCell>
                         <TableCell>{row.time}</TableCell>
                       </TableRow>
                     ))}
