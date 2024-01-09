@@ -3,6 +3,7 @@
     "name": "Curtis Marsten",
     "rank": "Renshi 6 Dan",
     "title": "Head Sensei",
+    "image": "#",
     "instruction": [
       {
         "role": "Head Sensei",
@@ -21,15 +22,16 @@
   {
     "name": "Vicki Marsten",
     "rank": "4 Dan",
-    "title": "Head Sensei",
+    "title": "Assistant Sensei",
+    "image": "#",
     "instruction": [
       {
-        "role": "Head Sensei",
+        "role": "Assistant Sensei",
         "dojo": "Kent Kendo Club",
         "time": "2001-Present"
       },
       {
-        "role": "Head Sensei",
+        "role": "Assistant Sensei",
         "dojo": "Federal Way Kendo Club",
         "time": "2009-Present"
       },
@@ -80,7 +82,8 @@
   {
     "name": "Tiarnan Marsten",
     "rank": "4 Dan",
-    "title": "Assistant Sensei / Coach",
+    "title": "Assistant Sensei",
+    "image": "tiarnan.jpg",
     "instruction": [
       {
         "role": "Assistant Sensei",
