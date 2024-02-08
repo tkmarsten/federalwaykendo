@@ -1,110 +1,40 @@
 "use client";
+import { Link, Divider } from "@nextui-org/react";
 import {
-  Link,
-  Divider,
-  Table,
-  TableHeader,
-  TableColumn,
-  TableBody,
-  TableRow,
-  TableCell,
-} from "@nextui-org/react";
+  TableOfContents,
+  VendorList,
+  BoguList,
+  ShinaiTable,
+} from "@/app/components/equipment";
 
 export default function Page() {
   return (
-    <main className="space-y-4">
+    <main className="space-y-4 max-w-screen-md mx-auto">
       <h1 className="text-6xl">
         Purchasing and Caring for Your Kendo Equipment
       </h1>
       <Divider />
       <section>
         <p>Table of Contents</p>
-        <ol className="list-decimal list-inside">
-          <li>
-            <Link href="#vendors">Kendo Vendors</Link>
-          </li>
-          <li>
-            <Link href="#equipment">Kendo Equipment</Link>
-          </li>
-          <li>
-            <Link href="#shinai1">Purchasing Shinai</Link>
-          </li>
-          <li>
-            <Link href="#shinai2">Shinai Care</Link>
-          </li>
-          <li>
-            <Link href="#uniform1">Purchasing Uniform</Link>
-          </li>
-          <li>
-            <Link href="#uniform2">Uniform Care</Link>
-          </li>
-          <li>
-            <Link href="#bogu">Purchasing Bogu</Link>
-          </li>
-          <li>
-            <Link href="#rental">Purchasing Bogu</Link>
-          </li>
-          <li>
-            <Link href="#measurements">Sizing Bogu</Link>
-          </li>
-        </ol>
+        <TableOfContents />
       </section>
       <section id="vendors">
-        <h2 className="text-2xl">List of vendors</h2>
-        <ul>
-          <li>
-            <Link href="https://maruyamakendosupply.com/" isExternal>
-              Maruyama Kendo Supply
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.e-bogu.com/" isExternal>
-              e-bogu
-            </Link>
-          </li>
-          <li>
-            <Link href="https://kendostar.com/" isExternal>
-              KendoStar
-            </Link>
-          </li>
-          <li>
-            <Link href="https://tozandoshop.com/" isExternal>
-              Tozando
-            </Link>
-          </li>
-          <li>
-            <Link href="https://alljapanbudogu.world/" isExternal>
-              All Japan Budogu
-            </Link>
-          </li>
-          <li>
-            <Link href="https://californiabudogu.com/" isExternal>
-              California Budogu
-            </Link>
-          </li>
-          <li>
-            <Link href="https://budogu-zen.ca/" isExternal>
-              Budogu Zen
-            </Link>
-          </li>
-        </ul>
+        <h2 className="text-2xl">1. Kendo Vendors</h2>
+        <VendorList />
       </section>
       <section id="equipment">
-        <h2 className="text-2xl">Kendo Equipment</h2>
+        <h2 className="text-2xl">2. Kendo Equipment</h2>
         <p>
           Below is a list of equipment that is required to have a full set of
           bogu. These are most often purchased as a set, but can also be ordered
           by part.
         </p>
-        <ul className="list-disc list-inside">
-          <li>Men (helmet)</li>
-          <li>Kote (gloves)</li>
-          <li>Dou (chest plate)</li>
-          <li>Tare (kilt)</li>
-        </ul>
+        <div className="gap-2 grid grid-cols-1 sm:grid-cols-4">
+          <BoguList />
+        </div>
       </section>
       <section id="shinai1" className="space-y-2">
-        <p className="text-2xl">Purchasing Shinai</p>
+        <p className="text-2xl">3. Purchasing Shinai</p>
         <p>
           For buying additional shinai, the simplest option is to purchase
           shinai directly from the club. In the case you would like to make your
@@ -124,37 +54,10 @@ export default function Page() {
           Children that are the same age may use a shinai that is shorter or
           longer than what is typical.
         </p>
-        <Table aria-label="Example static collection table">
-          <TableHeader>
-            <TableColumn>Age</TableColumn>
-            <TableColumn>Size</TableColumn>
-          </TableHeader>
-          <TableBody>
-            <TableRow key="1">
-              <TableCell>7-9</TableCell>
-              <TableCell>28, 30, 32</TableCell>
-            </TableRow>
-            <TableRow key="2">
-              <TableCell>10-12</TableCell>
-              <TableCell>32, 34, 36</TableCell>
-            </TableRow>
-            <TableRow key="3">
-              <TableCell>13-15 (Middle School)</TableCell>
-              <TableCell>36, 37</TableCell>
-            </TableRow>
-            <TableRow key="4">
-              <TableCell>16-18 (High School)</TableCell>
-              <TableCell>37, 38</TableCell>
-            </TableRow>
-            <TableRow key="5">
-              <TableCell>18+</TableCell>
-              <TableCell>38 (Female), 39 (Male)</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <ShinaiTable />
       </section>
       <section id="shinai2">
-        <p className="text-2xl">Shinai Care</p>
+        <p className="text-2xl">4. Shinai Care</p>
         <p>
           The shinai is very durable, being made from bamboo. They often do not
           require much care except the occasional check-up. Shinai are prone to
@@ -169,7 +72,7 @@ export default function Page() {
         </p>
       </section>
       <section id="uniform1">
-        <h2 className="text-2xl">Purchasing Uniform</h2>
+        <h2 className="text-2xl">5. Purchasing Uniform</h2>
         <p>
           Uniforms can run around $120-$150 for both the keiko-gi and hakama.
           The material can either be synthetic (polyester) or made from cotton.
@@ -205,7 +108,7 @@ export default function Page() {
         </div>
       </section>
       <section id="uniform2" className="space-y-2">
-        <p className="text-2xl">Uniform Care</p>
+        <p className="text-2xl">6. Uniform Care</p>
         <p>
           Properly caring for your uniform can vary and depend on which material
           you have. Polyster is much easier to care for in general. We recommend
@@ -239,7 +142,7 @@ export default function Page() {
         </p>
       </section>
       <section id="bogu">
-        <h2 className="text-2xl">Purchasing your first bogu set</h2>
+        <h2 className="text-2xl">7. Purchasing your first bogu set</h2>
         <p>
           Those purchasing their first set of armor can expect around $400-$500
           for a basic entry level set. Bogu sets can be expensive up front, but
@@ -250,7 +153,7 @@ export default function Page() {
         </p>
       </section>
       <section id="rental">
-        <p className="text-2xl">Bogu Rental</p>
+        <p className="text-2xl">8. Bogu Rental</p>
         <p>
           As a service to our younger club members, we offer the option to rent
           bogu from us for $30 per quarter. It is often more viable to rent
@@ -261,7 +164,7 @@ export default function Page() {
         </p>
       </section>
       <section id="measurements">
-        <h2 className="text-2xl">Getting your measurements</h2>
+        <h2 className="text-2xl">9. Getting your measurements</h2>
         <p>
           Every vendor or website will have their own way of taking measurements
           and which ones they need. Please use that vendor&apos;s guide to
