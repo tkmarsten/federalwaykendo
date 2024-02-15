@@ -33,7 +33,7 @@ export default function Page() {
       </section>
 
       <div className="space-y-8 mt-16">
-        <section id="beginning" className="bg-zinc-300 rounded-xl p-4">
+        <section id="beginning" className="bg-zinc-200 rounded-xl p-4">
           <p className="text-2xl font-semibold">Beginning</p>
           <div className="grid lg:grid-cols-3">
             <div>
@@ -69,7 +69,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="continuing" className="bg-zinc-300 rounded-xl p-4">
+        <section id="continuing" className="bg-zinc-200 rounded-xl p-4">
           <p className="text-2xl font-semibold">Intermediate</p>
           <div className="grid lg:grid-cols-3">
             <div>
@@ -100,7 +100,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="advanced" className="bg-zinc-300 rounded-xl p-4">
+        <section id="advanced" className="bg-zinc-200 rounded-xl p-4">
           <p className="text-2xl font-semibold">Advanced</p>
           <div className="grid lg:grid-cols-3">
             <div>

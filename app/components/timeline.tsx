@@ -24,7 +24,8 @@ export default function Timeline() {
       <div>
         <p className="text-sm">
           * = Some students may only need to spend one quarter in the continuing
-          class before progressing to advanced if show above average skill.
+          class before progressing to the advanced class if they demonstrate
+          above average skill.
         </p>
       </div>
     </div>
