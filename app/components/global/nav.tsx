@@ -78,7 +78,7 @@ export default function Nav() {
         <NavbarBrand>
           <Link href="/" className="text-foreground">
             <NextImage
-              src="/logo.png"
+              src="/logos/logo.png"
               width={45}
               height={45}
               alt={`${dojoData.name} logo`}

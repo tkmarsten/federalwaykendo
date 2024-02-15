@@ -1,5 +1,6 @@
 import { Link } from "@nextui-org/react";
 import Timeline from "@/app/components/timeline";
+import NextImage from "next/image";
 
 export default function Page() {
   return (
@@ -33,7 +34,14 @@ export default function Page() {
       </section>
 
       <div className="space-y-8 mt-16">
-        <section id="beginning" className="bg-zinc-300 rounded-xl p-4">
+        <section id="beginning" className="bg-zinc-200 rounded-xl p-4">
+          <NextImage
+            src={"/icons/beginning.png"}
+            alt="Image"
+            width={80}
+            height={80}
+            className="aspect-square object-contain"
+          />
           <p className="text-2xl font-semibold">Beginning</p>
           <div className="grid lg:grid-cols-3">
             <div>
@@ -69,8 +77,15 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="continuing" className="bg-zinc-300 rounded-xl p-4">
-          <p className="text-2xl font-semibold">Intermediate</p>
+        <section id="continuing" className="bg-zinc-200 rounded-xl p-4">
+          <NextImage
+            src={"/icons/continuing.png"}
+            alt="Image"
+            width={80}
+            height={80}
+            className="aspect-square object-contain"
+          />
+          <p className="text-2xl font-semibold">Continuing</p>
           <div className="grid lg:grid-cols-3">
             <div>
               <p className="font-medium">Concepts</p>
@@ -100,7 +115,14 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="advanced" className="bg-zinc-300 rounded-xl p-4">
+        <section id="advanced" className="bg-zinc-200 rounded-xl p-4">
+          <NextImage
+            src={"/icons/advanced.png"}
+            alt="Image"
+            width={80}
+            height={80}
+            className="aspect-square object-contain"
+          />
           <p className="text-2xl font-semibold">Advanced</p>
           <div className="grid lg:grid-cols-3">
             <div>

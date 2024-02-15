@@ -16,7 +16,7 @@
         "time": "2009-Present"
       }
     ],
-    "tournament": [],
+    "accolades": [],
     "admin": []
   },
   {
@@ -46,7 +46,7 @@
         "time": "2011"
       }
     ],
-    "tournament": [
+    "accolades": [
       {
         "place": "2nd",
         "division": "Women's 2 Dan and Up",
@@ -60,7 +60,7 @@
         "time": "1991"
       },
       {
-        "place": "1st Place",
+        "place": "1st",
         "division": "Team",
         "taikai": "3rd PNKF Women's Taikai",
         "time": "2007"
@@ -83,7 +83,7 @@
     "name": "Tiarnan Marsten",
     "rank": "4 Dan",
     "title": "Assistant Sensei",
-    "image": "tiarnan.jpg",
+    "image": "sensei/tiarnan.jpg",
     "instruction": [
       {
         "role": "Assistant Sensei",
@@ -101,7 +101,7 @@
         "time": "2017-Present"
       }
     ],
-    "tournament": [
+    "accolades": [
       {
         "place": "3rd",
         "division": "Boys Sr. Youth Individuals",

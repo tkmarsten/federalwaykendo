@@ -92,7 +92,7 @@ export function Classes() {
         {data.map((data) => (
           <div key={data.title} className="flex flex-col">
             <NextImage
-              src={"/" + data.image + ".png"}
+              src={"/icons/" + data.image + ".png"}
               alt="Image"
               width={80}
               height={80}
