@@ -46,7 +46,7 @@ export default function Page() {
         {data.map((data, index) => (
           <Card key={index} className="relative overflow-visible">
             <NextImage
-              src={"/" + data.src + ".png"}
+              src={"/icons/" + data.src + ".png"}
               alt="Shinai"
               width={60}
               height={20}
