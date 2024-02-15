@@ -39,7 +39,7 @@ export default function Footer() {
         <Divider className="bg-neutral-600 my-4" />
         <div className="flex justify-center my-2">
           <NextImage
-            src="/logo.png"
+            src="/logos/logo.png"
             alt={`${dojoData.name} Kendo logo`}
             width={50}
             height={50}

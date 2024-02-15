@@ -9,7 +9,7 @@ export default function Page() {
       <div className="flex flex-col lg:flex-row-reverse items-center">
         <div className="flex-1">
           <NextImage
-            src="/logo.png"
+            src="/logos/logo.png"
             width={200}
             height={100}
             alt="Logo"
@@ -34,7 +34,7 @@ export default function Page() {
       <section>
         <p className="text-sm text-secondary font-semibold">Instructors</p>
         <p>
-          Our head sensei both have over 40 years of kendo experience. This also
+          Our sensei have over 20-40 years of kendo experience. This also
           includes many years of experience teaching both at the local level and
           federation level for the Pacific Northwest.
         </p>

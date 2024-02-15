@@ -63,7 +63,7 @@ export default function SenseiTable() {
                   </TableBody>
                 </Table>
               </Tab>
-              <Tab title="Tournament">
+              <Tab title="Accolades">
                 <Table removeWrapper>
                   <TableHeader>
                     <TableColumn>Placement</TableColumn>
@@ -71,12 +71,12 @@ export default function SenseiTable() {
                       Division
                     </TableColumn>
                     <TableColumn className="hidden lg:table-cell">
-                      Tournament
+                      Accolades
                     </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
                   <TableBody>
-                    {sensei.tournament.map((row, index) => (
+                    {sensei.accolades.map((row, index) => (
                       <TableRow key={index}>
                         <TableCell className="font-medium">
                           {row.place}
