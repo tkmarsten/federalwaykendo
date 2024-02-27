@@ -31,23 +31,25 @@ export default function Page() {
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl mb-16">Sign Up for Spring Quarter Now!</p>
+        <p className="text-4xl mb-4">Sign Up for Spring Quarter Now!</p>
         <div className="grid lg:grid-cols-3 gap-10">
           {data.map((data, index) => (
-            <Card key={index} className="relative overflow-visible">
-              <NextImage
-                src={"/icons/" + data.src + ".png"}
-                alt="Shinai"
-                width={60}
-                height={20}
-                className="aspect-square object-contain absolute left-1/2 translate-x-[-50%] translate-y-[-50%] bg-slate-200 shadow-sm rounded-full"
-              />
-              <CardHeader className="justify-center pt-10">
-                <p className="text-lg">{data.title}</p>
+            <Card key={index}>
+              <CardHeader>
+                <NextImage
+                  src={"/icons/" + data.src + ".png"}
+                  alt="Shinai"
+                  width={60}
+                  height={60}
+                  className="aspect-square object-contain mr-4"
+                />
+                <div className="flex flex-col">
+                  <p className="text-xl">{data.title}</p>
+                  <p className="text-sm text-default-500">Tuesday</p>
+                  <p className="text-sm text-default-500">{data.time}</p>
+                </div>
               </CardHeader>
               <CardBody>
-                <p>Tuesday</p>
-                <p>{data.time}</p>
                 <Button
                   href={data.url}
                   as={Link}
