@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "The official website of the Federal Way Kendo Club. Live in the area and are looking to start kendo? Join here!",
   metadataBase: new URL("https://www.federalwaykendo.org/"),
   icons: {
-    icon: "/logo.png",
+    icon: "/logos/logo.png",
   },
 };
 
