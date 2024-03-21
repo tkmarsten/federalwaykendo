@@ -210,7 +210,7 @@ export function FAQ() {
     },
     {
       title: "What do I need before joining kendo?",
-      body: "Nothing is needed before attending your first class. We provide swords (shinai) to all new students to purchase for $25. A shinai is the only required equipment for beginners.",
+      body: "Nothing is needed before attending your first class. We provide swords (shinai) to all new students to purchase for $30. A shinai is the only required equipment for beginners.",
     },
     {
       title: "Can I do a free trial of kendo?",
