@@ -112,22 +112,22 @@ export function BoguList() {
   const list = [
     {
       title: "Men",
-      img: "#",
+      img: "men.jpg",
       caption: "Helmet",
     },
     {
       title: "Kote",
-      img: "#",
+      img: "kote.jpg",
       caption: "Gloves",
     },
     {
       title: "Dou",
-      img: "#",
+      img: "dou.jpg",
       caption: "Chest armor",
     },
     {
       title: "Tare",
-      img: "#",
+      img: "tare.jpg",
       caption: "Hip armor",
     },
   ];
@@ -143,7 +143,7 @@ export function BoguList() {
               width="100%"
               alt={item.title}
               className="w-full object-cover h-[180px]"
-              src={item.img}
+              src={"/bogu/" + item.img}
             />
           </CardBody>
           <CardFooter className="text-small justify-between">
