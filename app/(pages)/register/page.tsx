@@ -67,12 +67,12 @@ export default function Page() {
       </section>
       <section className="space-y-4">
         <p className="text-4xl mb-4">2024 Schedule</p>
-        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
-          <p className="text-sm">Current quarter</p>
+        {/*<div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
           <p>Winter</p>
           <p>January 9 - March 12</p>
-        </div>
+          </div>*/}
         <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+          <p className="text-sm">Current quarter</p>
           <p>Spring</p>
           <p>March 19 - May 28</p>
         </div>

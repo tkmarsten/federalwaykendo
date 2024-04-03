@@ -23,7 +23,7 @@ export default function SenseiTable() {
         >
           <div className="flex flex-col items-center">
             <Image
-              src={`/${sensei.image}`}
+              src={`/sensei/${sensei.image}`}
               width={200}
               height={200}
               fallbackSrc="https://via.placeholder.com/200x200"
@@ -71,7 +71,7 @@ export default function SenseiTable() {
                       Division
                     </TableColumn>
                     <TableColumn className="hidden lg:table-cell">
-                      Accolades
+                      Tournament
                     </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
