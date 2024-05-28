@@ -12,26 +12,29 @@ export default function Page() {
       src: "beginning",
       title: "Beginning",
       time: "6:15-7pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=19711199&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212857&InterfaceParameter=WebTrac_1",
     },
     {
       src: "continuing",
       title: "Continuing",
       time: "6:15-7pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=19711212&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212894&InterfaceParameter=WebTrac_1",
     },
     {
       src: "advanced",
       title: "Advanced",
       time: "7-8:30pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=19711242&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212931&InterfaceParameter=WebTrac_1",
     },
   ];
 
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl mb-4">Sign Up for Spring Quarter Now!</p>
+        <p className="text-4xl">Summer Quarter Registration Open Now!</p>
+        <p className="text-neutral-500 mb-4">
+          Classes are for all ages. Youth and adults classes are combined.
+        </p>
         <div className="grid lg:grid-cols-3 gap-10">
           {data.map((data, index) => (
             <Card key={index}>
@@ -67,16 +70,13 @@ export default function Page() {
       </section>
       <section className="space-y-4">
         <p className="text-4xl mb-4">2024 Schedule</p>
-        {/*<div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
-          <p>Winter</p>
-          <p>January 9 - March 12</p>
-          </div>*/}
-        <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+        <div className="bg-white rounded-md p-4 border-s-8 border-green-600 hidden">
           <p className="text-sm">Current quarter</p>
           <p>Spring</p>
           <p>March 19 - May 28</p>
         </div>
         <div className="bg-white rounded-md p-4 border-s-8 border-amber-400">
+          <p className="text-sm">Current quarter</p>
           <p>Summer</p>
           <p>June 4 - August 17</p>
         </div>
@@ -84,6 +84,10 @@ export default function Page() {
           <p>Autumn</p>
           <p>October 1 - December 17 (Beginning)</p>
           <p>September 17 - December 17 (Continuing, Advanced)</p>
+        </div>
+        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700 hidden">
+          <p>Winter</p>
+          <p>January 9 - March 12</p>
         </div>
       </section>
     </main>
