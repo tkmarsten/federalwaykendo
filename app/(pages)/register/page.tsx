@@ -12,19 +12,19 @@ export default function Page() {
       src: "beginning",
       title: "Beginning",
       time: "6:15-7pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212857&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=23452014&InterfaceParameter=WebTrac_1",
     },
     {
       src: "continuing",
       title: "Continuing",
       time: "6:15-7pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212894&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=23452056&InterfaceParameter=WebTrac_1",
     },
     {
       src: "advanced",
       title: "Advanced",
       time: "7-8:30pm",
-      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=21212931&InterfaceParameter=WebTrac_1",
+      url: "https://rec.cityoffederalway.com/wbwsc/webtrac.wsc/iteminfo.html?Module=AR&FMID=23452098&InterfaceParameter=WebTrac_1",
     },
   ];
 
@@ -75,7 +75,7 @@ export default function Page() {
           <p>Spring</p>
           <p>March 19 - May 28</p>
         </div>
-        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400">
+        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400 hidden">
           <p className="text-sm">Current quarter</p>
           <p>Summer</p>
           <p>June 4 - August 17</p>
