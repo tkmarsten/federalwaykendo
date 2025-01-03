@@ -45,7 +45,7 @@ export default function Footer() {
             height={50}
           />
         </div>
-        <p className="text-center">&copy; 2024 {dojoData.name} Kendo Club</p>
+        <p className="text-center">&copy; 2025 {dojoData.name} Kendo Club</p>
       </div>
     </footer>
   );
